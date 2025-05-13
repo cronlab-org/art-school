@@ -1,0 +1,172 @@
+import React from "react";
+import ArticleCard from "./ArticleCard";
+import { MoveRight } from "lucide-react";
+import Image from "next/image";
+
+interface Artist {
+  id: number;
+  artistName: string;
+  artworkTitle: string;
+  image: string;
+  category: "painting" | "sculpture" | "photography" | "digital";
+  achievements: {
+    title: string;
+    year: string;
+    isGold?: boolean;
+  }[];
+}
+
+export default function ArticleGrid(): React.JSX.Element {
+  const featuredArtist: Artist = {
+    id: 0,
+    artistName: "Elena Vasquez",
+    artworkTitle: "Chromatic Resonance Series",
+    image: "/featured.jpg",
+    category: "painting",
+    achievements: [
+      {
+        title: "International Art Prize Gold Medal",
+        year: "2023",
+        isGold: true,
+      },
+      { title: "Young Artist of the Year", year: "2022" },
+      { title: "Modern Art Biennale Winner", year: "2021" },
+    ],
+  };
+
+  const artists: Artist[] = [
+    {
+      id: 1,
+      artistName: "Marcus Chen",
+      artworkTitle: "Urban Fragments",
+      image: "/featured.jpg",
+      category: "photography",
+      achievements: [
+        { title: "Photo Annual Gold Award", year: "2023", isGold: true },
+        { title: "Emerging Photographer", year: "2022" },
+      ],
+    },
+    {
+      id: 2,
+      artistName: "Sophia Laurent",
+      artworkTitle: "Ephemeral Structures",
+      image: "/featured.jpg",
+      category: "sculpture",
+      achievements: [
+        { title: "Sculpture Biennale Winner", year: "2023", isGold: true },
+        { title: "Material Innovation Award", year: "2022" },
+      ],
+    },
+    {
+      id: 3,
+      artistName: "Jamal Wright",
+      artworkTitle: "Digital Horizons",
+      image: "/featured.jpg",
+      category: "digital",
+      achievements: [
+        { title: "Digital Art Pioneer Award", year: "2023" },
+        { title: "Innovation in Media", year: "2022" },
+      ],
+    },
+    // {
+    //   id: 4,
+    //   artistName: "Isabella Moreno",
+    //   artworkTitle: "Silent Dialogues",
+    //   image:
+    //     "https://images.unsplash.com/photo-1578926375605-eeb7e9de13c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80",
+    //   category: "painting",
+    //   achievements: [
+    //     { title: "Contemporary Masters Award", year: "2023", isGold: true },
+    //     { title: "Art Critics Choice", year: "2022" },
+    //   ],
+    // },
+  ];
+
+  return (
+    <section className="container mx-auto px-4 py-16">
+      <div className="mb-12 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          Our Award-Winning Artists
+        </h2>
+        <p className="text-gray-600 max-w-2xl mx-auto">
+          Celebrating excellence from our art school alumni and their remarkable
+          achievements in the global art scene.
+        </p>
+      </div>
+
+      {/* Featured Artist */}
+      <div className="mb-16">
+        <div className="relative group overflow-hidden rounded-xl h-[500px]">
+          <Image
+            src={featuredArtist.image}
+            alt={featuredArtist.artworkTitle}
+            width={1200}
+            height={500}
+            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          />
+
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+
+          <div className="absolute bottom-0 left-0 p-8 w-full">
+            <div className="flex items-center gap-2 mb-4">
+              <span className="bg-amber-400 text-black px-3 py-1 text-xs font-bold uppercase tracking-wider">
+                Featured Artist
+              </span>
+              <span className="text-white/80 text-sm">
+                {featuredArtist.category}
+              </span>
+            </div>
+
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">
+              {featuredArtist.artistName}
+            </h2>
+            <p className="text-xl text-amber-300 font-medium mb-4">
+              {featuredArtist.artworkTitle}
+            </p>
+
+            <div className="flex flex-wrap gap-3 mb-6">
+              {featuredArtist.achievements.map((achievement, index) => (
+                <span
+                  key={index}
+                  className={`px-3 py-1 rounded-full text-xs font-medium ${
+                    achievement.isGold
+                      ? "bg-amber-400 text-black"
+                      : "bg-white/20 text-white"
+                  }`}
+                >
+                  {achievement.title} {achievement.isGold && "★"}
+                </span>
+              ))}
+            </div>
+
+            <button className="flex items-center gap-2 text-white group">
+              <span className="font-medium">View artist profile</span>
+              <MoveRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Artists Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {artists.map((artist) => (
+          <ArticleCard
+            key={artist.id}
+            artistName={artist.artistName}
+            artworkTitle={artist.artworkTitle}
+            image={artist.image}
+            category={artist.category}
+            achievements={artist.achievements}
+          />
+        ))}
+      </div>
+
+      {/* View All Button */}
+      <div className="mt-12 text-center">
+        <button className="px-6 py-3 bg-black text-white rounded-full font-medium hover:bg-gray-800 transition-colors">
+          View all artists and achievements
+        </button>
+      </div>
+    </section>
+  );
+}
