@@ -1,5 +1,6 @@
 import ArticleGrid from "@/components/ArticleGrid";
 import FeaturedArticle from "@/components/FeaturedArticle";
+import Footer from "@/components/footer/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import StudentGallery from "@/components/StudentGallerySection";
@@ -14,9 +15,7 @@ export default function Home() {
         <ArticleGrid />
         <StudentGallery />
       </main>
-      <footer className="container mx-auto px-4 py-8 border-t border-gray-800 mt-12 text-center text-gray-500 text-sm">
-        <p>&copy; {new Date().getFullYear()} Arcus. All rights reserved.</p>
-      </footer>
+      <Footer />
     </div>
   );
 }
