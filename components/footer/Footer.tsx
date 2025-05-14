@@ -1,4 +1,4 @@
-import { Facebook, Instagram, MapPin, Twitter } from "lucide-react";
+import { Facebook, Instagram, MapPin } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -37,21 +37,15 @@ export default function Footer(): React.JSX.Element {
                 <h4 className="text-white font-medium mb-2">Follow Us</h4>
                 <div className="flex space-x-4">
                   <Link
-                    href="#"
+                    href="https://www.instagram.com/debashis_devroy_art_school/?hl=en"
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     <span className="sr-only">Instagram</span>
                     <Instagram />
                   </Link>
+
                   <Link
-                    href="#"
-                    className="text-gray-400 hover:text-white transition-colors"
-                  >
-                    <span className="sr-only">Twitter</span>
-                    <Twitter />
-                  </Link>
-                  <Link
-                    href="#"
+                    href="https://www.facebook.com/debashis.devroy.artschool/"
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     <span className="sr-only">Facebook</span>

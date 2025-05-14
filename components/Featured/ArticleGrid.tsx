@@ -32,20 +32,7 @@ export default function ArticleGrid(): React.JSX.Element {
 
   const [isHovered, setIsHovered] = useState(false);
 
-  const featuredArtist: Artist = {
-    id: 0,
-    artistName: "Elena Vasquez",
-    artworkTitle: "Chromatic Resonance Series",
-    image: "/featured.jpg",
-    category: "painting",
-    achievements: [
-      {
-        title: "International Art Prize Gold Medal",
-        year: "2023",
-        isGold: true,
-      },
-    ],
-  };
+
 
   const artists: Artist[] = [
     {
