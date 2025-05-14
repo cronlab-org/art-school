@@ -1,11 +1,11 @@
-import { Facebook, Instagram, MapPin } from "lucide-react";
+import { Facebook, Instagram, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
 export default function Footer(): React.JSX.Element {
   return (
-    <footer className="bg-[#0a0a0a] text-gray-300 mt-16">
-      <div className="container mx-auto px-8 py-12">
+    <footer className="bg-[#0a0a0a] text-gray-300 mt-16 py-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="space-y-6">
             <div>
@@ -22,7 +22,13 @@ export default function Footer(): React.JSX.Element {
               <div className="space-y-4">
                 <div>
                   <h4 className="text-white font-medium mb-2">Contact</h4>
-                  <p className="text-gray-400">+91 98740 94338</p>
+                  <a
+                    href="tel:+919874094338"
+                    className="text-gray-400 hover:text-white transition-colors flex items-center gap-2"
+                  >
+                    <Phone size={16} />
+                    <span>+91 98740 94338</span>
+                  </a>
                 </div>
                 <div>
                   <h4 className="text-white font-medium mb-2">
@@ -39,6 +45,8 @@ export default function Footer(): React.JSX.Element {
                   <Link
                     href="https://www.instagram.com/debashis_devroy_art_school/?hl=en"
                     className="text-gray-400 hover:text-white transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <span className="sr-only">Instagram</span>
                     <Instagram />
@@ -47,6 +55,8 @@ export default function Footer(): React.JSX.Element {
                   <Link
                     href="https://www.facebook.com/debashis.devroy.artschool/"
                     className="text-gray-400 hover:text-white transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <span className="sr-only">Facebook</span>
                     <Facebook />
@@ -57,7 +67,7 @@ export default function Footer(): React.JSX.Element {
           </div>
 
           <div className="w-full h-full min-h-64">
-            <div className="flex justify-between items-center mb-4">
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mb-4">
               <h4 className="text-white font-medium">Visit Our Place</h4>
               <Link
                 href="https://www.google.com/maps/place/Debashis+Dev+Roy+Art+School/@22.609356,88.417099,17z/data=!3m1!4b1!4m6!3m5!1s0x3a0275f5cb9093b7:0x56024d91bfceb8a3!8m2!3d22.609356!4d88.417099!16s%2Fg%2F11lc5pd0nn?entry=ttu"
@@ -76,6 +86,7 @@ export default function Footer(): React.JSX.Element {
                 style={{ border: 0 }}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
+                title="Debashis Dev Roy Art School Map Location"
               ></iframe>
             </div>
           </div>
