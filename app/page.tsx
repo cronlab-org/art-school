@@ -1,9 +1,9 @@
-import ArticleGrid from "@/components/ArticleGrid";
-import FeaturedArticle from "@/components/FeaturedArticle";
+import ArticleGrid from "@/components/Featured/ArticleGrid";
+import FeaturedArticle from "@/components/Featured/FeaturedArticle";
 import Footer from "@/components/footer/Footer";
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import StudentGallery from "@/components/StudentGallerySection";
+import Header from "@/components/header/Header";
+import Hero from "@/components/Hero/Hero";
+import StudentGallery from "@/components/gallery/StudentGallerySection";
 
 export default function Home() {
   return (
