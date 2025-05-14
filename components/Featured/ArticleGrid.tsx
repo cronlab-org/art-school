@@ -1,7 +1,5 @@
 import React from "react";
 import ArticleCard from "./ArticleCard";
-import { MoveRight } from "lucide-react";
-import Image from "next/image";
 
 interface Artist {
   id: number;
@@ -17,21 +15,6 @@ interface Artist {
 }
 
 export default function ArticleGrid(): React.JSX.Element {
-  const featuredArtist: Artist = {
-    id: 0,
-    artistName: "Elena Vasquez",
-    artworkTitle: "Chromatic Resonance Series",
-    image: "/featured.jpg",
-    category: "painting",
-    achievements: [
-      {
-        title: "International Art Prize Gold Medal",
-        year: "2023",
-        isGold: true,
-      },
-    ],
-  };
-
   const artists: Artist[] = [
     {
       id: 1,
@@ -85,59 +68,6 @@ export default function ArticleGrid(): React.JSX.Element {
           Celebrating excellence from our art school alumni and their remarkable
           achievements in the global art scene.
         </p>
-      </div>
-
-      {/* Featured Artist */}
-      <div className="mb-16">
-        <div className="relative group overflow-hidden rounded-xl h-[500px]">
-          <Image
-            src={featuredArtist.image}
-            alt={featuredArtist.artworkTitle}
-            width={1200}
-            height={500}
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-          />
-
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
-
-          <div className="absolute bottom-0 left-0 p-8 w-full">
-            <div className="flex items-center gap-2 mb-4">
-              <span className="bg-amber-400 text-black px-3 py-1 text-xs font-bold uppercase tracking-wider">
-                Featured Artist
-              </span>
-              <span className="text-white/80 text-sm">
-                {featuredArtist.category}
-              </span>
-            </div>
-
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">
-              {featuredArtist.artistName}
-            </h2>
-            <p className="text-xl text-amber-300 font-medium mb-4">
-              {featuredArtist.artworkTitle}
-            </p>
-
-            <div className="flex flex-wrap gap-3 mb-6">
-              {featuredArtist.achievements.map((achievement, index) => (
-                <span
-                  key={index}
-                  className={`px-3 py-1 rounded-full text-xs font-medium ${
-                    achievement.isGold
-                      ? "bg-amber-400 text-black"
-                      : "bg-white/20 text-white"
-                  }`}
-                >
-                  {achievement.title} {achievement.isGold && "★"}
-                </span>
-              ))}
-            </div>
-
-            <button className="flex items-center gap-2 text-white group">
-              <span className="font-medium">View artist profile</span>
-              <MoveRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </button>
-          </div>
-        </div>
       </div>
 
       {/* Artists Grid */}

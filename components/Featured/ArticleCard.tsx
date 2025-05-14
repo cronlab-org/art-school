@@ -96,11 +96,18 @@ export default function ArticleCard({
                         : "bg-neutral-800/40 border border-neutral-700/50"
                     } flex items-center justify-center mr-3 backdrop-blur-sm`}
                   >
-                    <div
-                      className={`w-2 h-2 rounded-full ${
-                        achievement.isGold ? "bg-amber-300" : "bg-neutral-300"
-                      }`}
-                    ></div>
+                    <svg
+                      className="w-5 h-5"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M17 10c.7.7 1.2 1.5 1.5 2.5.3-1 .8-1.8 1.5-2.5-1-.3-2-.3-3 0M17 14c-.7.7-1.2 1.5-1.5 2.5-.3-1-.8-1.8-1.5-2.5 1-.3 2-.3 3 0M9.5 8c.5.5.8 1.1 1 1.7.2-.6.5-1.2 1-1.7-.8-.2-1.7-.2-2 0M9.5 16c-.5.5-.8 1.1-1 1.7-.2-.6-.5-1.2-1-1.7.8-.2 1.7-.2 2 0" />
+                    </svg>
                   </div>
                   <div>
                     <p className="text-sm text-neutral-100">
