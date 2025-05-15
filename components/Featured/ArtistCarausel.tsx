@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef, useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight, Award, Trophy, Star } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import {
   Carousel,
@@ -12,22 +12,11 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import { useCallback } from "react";
 
-interface Artist {
-  id: number;
-  artistName: string;
-
-  image: string;
-  achievements: {
-    title: string;
-    year: string;
-    isGold?: boolean;
-  }[];
-}
-
-export default function ArtistCarousel(): React.JSX.Element {
-  const [isHovered, setIsHovered] = useState(false);
+export default function AppleStyleCarousel(): React.JSX.Element {
   const [api, setApi] = useState<any>();
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   const onSelect = useCallback((emblaApi: any) => {
     setCurrentIndex(emblaApi.selectedScrollSnap());
@@ -37,8 +26,13 @@ export default function ArtistCarousel(): React.JSX.Element {
     if (!api) return;
 
     api.on("select", onSelect);
+    api.on("dragStart", () => setIsDragging(true));
+    api.on("dragEnd", () => setIsDragging(false));
+
     return () => {
       api.off("select", onSelect);
+      api.off("dragStart", () => setIsDragging(true));
+      api.off("dragEnd", () => setIsDragging(false));
     };
   }, [api, onSelect]);
 
@@ -51,47 +45,36 @@ export default function ArtistCarousel(): React.JSX.Element {
     })
   );
 
-  const artists: Artist[] = [
+  const images = [
     {
-      id: 1,
-      artistName: "Marcus Chen",
-
-      image: "/featured.jpg",
-      achievements: [
-        { title: "Photo Annual Gold Award", year: "2023", isGold: true },
-      ],
+      src: "/artwork6.jpeg",
+      alt: "Modern art exhibition",
+      title: "Contemporary Visions",
+      subtitle: "Exploring new artistic frontiers",
     },
     {
-      id: 2,
-      artistName: "Sophia Laurent",
-
-      image: "/featured.jpg",
-      achievements: [
-        { title: "Sculpture Biennale Winner", year: "2023", isGold: true },
-      ],
+      src: "/artwork7.jpg",
+      alt: "Abstract painting",
+      title: "Color Harmonies",
+      subtitle: "The interplay of light and form",
     },
     {
-      id: 3,
-      artistName: "Jamal Wright",
-
-      image: "/featured.jpg",
-      achievements: [{ title: "Digital Art Pioneer Award", year: "2023" }],
+      src: "/artwork3.jpg",
+      alt: "Sculpture garden",
+      title: "Spatial Dialogues",
+      subtitle: "Where form meets environment",
+    },
+    {
+      src: "/artwork9.jpg",
+      alt: "Digital art installation",
+      title: "Future Canvas",
+      subtitle: "Technology redefining creativity",
     },
   ];
 
   return (
-    <section className="container mx-auto px-4 py-12">
-      <div className="mb-8 text-center">
-        <h2 className="text-2xl md:text-3xl font-bold mb-3 font-playfair">
-          Our Award-Winning Artists
-        </h2>
-        <p className="text-gray-500 text-sm md:text-base max-w-2xl mx-auto font-montserrat">
-          Celebrating excellence from our art school alumni and their remarkable
-          achievements in the global art scene.
-        </p>
-      </div>
-
-      <div className="relative">
+    <section className="w-full py-12 md:py-16 lg:py-20">
+      <div className="relative max-w-screen-xl mx-auto px-4">
         <Carousel
           setApi={setApi}
           onMouseEnter={() => setIsHovered(true)}
@@ -100,89 +83,46 @@ export default function ArtistCarousel(): React.JSX.Element {
           opts={{
             loop: true,
             align: "center",
+            duration: isDragging ? 30 : 50,
           }}
-          className="relative overflow-visible"
+          className="relative w-full group"
         >
-          <CarouselContent className="-ml-4">
-            {artists.map((artist, idx) => (
+          <CarouselContent className="-ml-1">
+            {images.map((image, idx) => (
               <CarouselItem
                 key={idx}
-                className="pl-4 basis-[85%] sm:basis-[80%] md:basis-[65%] lg:basis-[50%]"
+                className="pl-1 basis-full sm:basis-4/5 md:basis-2/3 lg:basis-1/2"
               >
-                <div
-                  className={`relative rounded-xl overflow-hidden transition-all duration-500 ${
-                    currentIndex === idx ? "scale-100" : "scale-95 opacity-80"
-                  }`}
-                  style={{
-                    paddingBottom: "65%", // Adjusted aspect ratio to show more image
-                  }}
-                >
-                  <div className="absolute inset-0 overflow-hidden">
+                <div className="relative aspect-[16/10] rounded-2xl overflow-hidden">
+                  <div
+                    className={`absolute inset-0 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+                      currentIndex === idx
+                        ? "scale-100 opacity-100"
+                        : "scale-[0.98] opacity-90"
+                    }`}
+                  >
                     <Image
-                      src={artist.image}
-                      alt={artist.artistName}
+                      src={image.src}
+                      alt={image.alt}
                       fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-105"
-                      style={{ objectPosition: "center center" }}
-                      sizes="(max-width: 640px) 85vw, (max-width: 768px) 65vw, 50vw"
+                      className="object-cover"
                       priority={idx === 0}
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 60vw"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-black/30" />
-                  </div>
-
-                  {/* Artist name - reduced size and position */}
-                  <div className="absolute top-3 sm:top-4 left-3 sm:left-6">
-                    <div className="relative">
-                      <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-1 leading-tight">
-                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-white/70">
-                          {artist.artistName.split(" ")[0]}
-                        </span>
-                      </h2>
-                      <div className="h-0.5 w-full bg-white/30 rounded-full mt-1 mb-1"></div>
-                      <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white/10 tracking-tight">
-                        {artist.artistName.split(" ")[1] || ""}
-                      </h2>
-                    </div>
-                  </div>
-
-                  {/* Info footer - made more compact */}
-                  <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 backdrop-blur-sm bg-black/30">
-                    <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-2">
-                      <div className="flex flex-col items-end">
-                        {artist.achievements.map((achievement, index) => (
-                          <div
-                            key={index}
-                            className={`flex items-center gap-1 sm:gap-2 mb-1 last:mb-0 p-1.5 rounded-md ${
-                              achievement.isGold
-                                ? "bg-gradient-to-r from-amber-500/10 to-amber-500/5 border border-amber-500/20"
-                                : "bg-white/5 border border-white/5"
-                            }`}
-                          >
-                            {achievement.isGold ? (
-                              <Trophy className="h-3 w-3 sm:h-4 sm:w-4 text-amber-400" />
-                            ) : (
-                              <Award className="h-3 w-3 sm:h-4 sm:w-4 text-white" />
-                            )}
-                            <div className="text-right">
-                              <p className="text-xs font-medium text-white">
-                                {achievement.title}
-                              </p>
-                              <p
-                                className={`text-xs ${
-                                  achievement.isGold
-                                    ? "text-amber-300"
-                                    : "text-white/60"
-                                }`}
-                              >
-                                {achievement.year}
-                              </p>
-                            </div>
-                            {achievement.isGold && (
-                              <Star className="h-2 w-2 sm:h-3 sm:w-3 text-amber-400 fill-amber-400" />
-                            )}
-                          </div>
-                        ))}
-                      </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    <div
+                      className={`absolute bottom-6 left-6 right-6 text-white transition-all duration-500 ${
+                        currentIndex === idx
+                          ? "translate-y-0 opacity-100"
+                          : "translate-y-4 opacity-0"
+                      }`}
+                    >
+                      <h3 className="text-2xl md:text-3xl font-medium tracking-tight">
+                        {image.title}
+                      </h3>
+                      <p className="text-sm md:text-base text-white/90 mt-1">
+                        {image.subtitle}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -190,41 +130,38 @@ export default function ArtistCarousel(): React.JSX.Element {
             ))}
           </CarouselContent>
 
-          {isHovered && (
-            <>
-              <CarouselPrevious
-                className="absolute left-2 top-1/2 -translate-y-1/2 z-10 h-7 w-7 sm:h-8 sm:w-8 md:h-10 md:w-10 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all border-none shadow-lg"
-                variant="ghost"
-                size="icon"
-              >
-                <ChevronLeft className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-white" />
-                <span className="sr-only">Previous slide</span>
-              </CarouselPrevious>
-              <CarouselNext
-                className="absolute right-2 top-1/2 -translate-y-1/2 z-10 h-7 w-7 sm:h-8 sm:w-8 md:h-10 md:w-10 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all border-none shadow-lg"
-                variant="ghost"
-                size="icon"
-              >
-                <ChevronRight className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-white" />
-                <span className="sr-only">Next slide</span>
-              </CarouselNext>
-            </>
-          )}
+          <CarouselPrevious
+            className={`absolute left-4 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-black/30 backdrop-blur-sm hover:bg-black/50 transition-all border-none shadow-lg text-white ${
+              isHovered ? "opacity-100" : "opacity-0"
+            } group-hover:opacity-100`}
+            variant="ghost"
+            size="icon"
+          >
+            <ChevronLeft className="h-5 w-5" />
+            <span className="sr-only">Previous slide</span>
+          </CarouselPrevious>
+          <CarouselNext
+            className={`absolute right-4 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-black/30 backdrop-blur-sm hover:bg-black/50 transition-all border-none shadow-lg text-white ${
+              isHovered ? "opacity-100" : "opacity-0"
+            } group-hover:opacity-100`}
+            variant="ghost"
+            size="icon"
+          >
+            <ChevronRight className="h-5 w-5" />
+            <span className="sr-only">Next slide</span>
+          </CarouselNext>
         </Carousel>
 
-        <div className="flex justify-center gap-1.5 mt-4">
-          {artists.map((_, idx) => (
+        <div className="flex justify-center gap-2 mt-6">
+          {images.map((_, idx) => (
             <button
               key={idx}
-              onClick={() => {
-                api?.scrollTo(idx);
-                setCurrentIndex(idx);
-              }}
-              className={`h-1.5 sm:h-2 transition-all ${
+              onClick={() => api?.scrollTo(idx)}
+              className={`h-2 transition-all rounded-full ${
                 currentIndex === idx
-                  ? "bg-white w-4 sm:w-5"
-                  : "bg-white/30 w-1.5 sm:w-2"
-              } rounded-full`}
+                  ? "bg-black dark:bg-white w-6"
+                  : "bg-black/20 dark:bg-white/30 w-2"
+              }`}
               aria-label={`Go to slide ${idx + 1}`}
             />
           ))}
