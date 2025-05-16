@@ -34,7 +34,7 @@ export default function Hero2(): React.JSX.Element {
               IN FINE ARTS
             </h1>
 
-            <p className="mt-3 sm:mt-4 text-gray-400 max-w-xl text-xs sm:text-sm md:text-base font-cormorante italic">
+            <p className="mt-3 sm:mt-4 text-neutral-400 max-w-xl text-xs sm:text-sm md:text-base font-cormorante italic">
               Join Debashis Dev Roy Art School - Kolkata&apos;s leading
               institution for professional art training. Our certified online
               art courses combine traditional techniques with contemporary
@@ -64,7 +64,7 @@ export default function Hero2(): React.JSX.Element {
               <div className="mt-2 sm:mt-4 space-y-2 sm:space-y-3">
                 <div
                   role="button"
-                  className="flex items-start text-gray-400 hover:text-white transition-colors cursor-pointer py-1"
+                  className="flex items-start text-neutral-400 hover:text-neutral-300 transition-colors cursor-pointer py-1"
                   onClick={handleAddressClick}
                 >
                   <MapPin className="h-3 w-3 sm:h-4 sm:w-4 mr-2 sm:mr-3 mt-0.5 flex-shrink-0" />
@@ -72,14 +72,14 @@ export default function Hero2(): React.JSX.Element {
                 </div>
                 <div
                   role="button"
-                  className="flex items-center text-gray-400 hover:text-white transition-colors cursor-pointer py-1"
+                  className="flex items-center text-neutral-400 hover:text-neutral-300 transition-colors cursor-pointer py-1"
                   onClick={handleCallClick}
                 >
                   <Phone className="h-3 w-3 sm:h-4 sm:w-4 mr-2 sm:mr-3" />
                   <span className="text-xs sm:text-sm">+91 98740 94338</span>
                 </div>
                 <div
-                  className="flex items-center text-gray-400 hover:text-white transition-colors cursor-pointer py-1"
+                  className="flex items-center text-neutral-400 hover:text-neutral-300 transition-colors cursor-pointer py-1"
                   onClick={handleWhatsAppClick}
                 >
                   <svg
@@ -98,13 +98,13 @@ export default function Hero2(): React.JSX.Element {
               <div className="w-10 h-10 sm:w-12 sm:h-12 border border-gray-600 rounded-full flex items-center justify-center mb-2 sm:mb-3">
                 <span className="text-xl sm:text-2xl">✻</span>
               </div>
-              <p className="text-sm sm:text-base text-gray-400">
+              <p className="text-sm sm:text-base text-neutral-400">
                 Affiliated to{" "}
-                <span className="text-white">Bharatiya Charukala Mandir</span>
+                <span className="text-neutral-300">Bharatiya Charukala Mandir</span>
               </p>
-              <p className="mt-1 text-sm sm:text-base text-gray-400">
+              <p className="mt-1 text-sm sm:text-base text-neutral-400">
                 Licensed by{" "}
-                <span className="text-white">Govt. of West Bengal</span>
+                <span className="text-neutral-300">Govt. of West Bengal</span>
               </p>
             </div>
           </div>

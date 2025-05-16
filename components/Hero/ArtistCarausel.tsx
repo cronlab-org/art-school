@@ -111,7 +111,7 @@ export default function ArtistCarousel(): React.JSX.Element {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                     <div
-                      className={`absolute bottom-6 left-6 right-6 text-white transition-all duration-500 ${
+                      className={`absolute bottom-6 left-6 right-6 text-neutral-300 transition-all duration-500 ${
                         currentIndex === idx
                           ? "translate-y-0 opacity-100"
                           : "translate-y-4 opacity-0"
@@ -120,7 +120,7 @@ export default function ArtistCarousel(): React.JSX.Element {
                       <h3 className="text-2xl md:text-3xl font-medium tracking-tight">
                         {image.title}
                       </h3>
-                      <p className="text-sm md:text-base text-white/90 mt-1">
+                      <p className="text-sm md:text-base text-neutral-300/90 mt-1">
                         {image.subtitle}
                       </p>
                     </div>
@@ -131,7 +131,7 @@ export default function ArtistCarousel(): React.JSX.Element {
           </CarouselContent>
 
           <CarouselPrevious
-            className={`absolute left-4 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-black/30 backdrop-blur-sm hover:bg-black/50 transition-all border-none shadow-lg text-white ${
+            className={`absolute left-4 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-black/30 backdrop-blur-sm hover:bg-black/50 transition-all border-none shadow-lg text-neutral-300 ${
               isHovered ? "opacity-100" : "opacity-0"
             } group-hover:opacity-100`}
             variant="ghost"
@@ -141,7 +141,7 @@ export default function ArtistCarousel(): React.JSX.Element {
             <span className="sr-only">Previous slide</span>
           </CarouselPrevious>
           <CarouselNext
-            className={`absolute right-4 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-black/30 backdrop-blur-sm hover:bg-black/50 transition-all border-none shadow-lg text-white ${
+            className={`absolute right-4 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-black/30 backdrop-blur-sm hover:bg-black/50 transition-all border-none shadow-lg text-neutral-300 ${
               isHovered ? "opacity-100" : "opacity-0"
             } group-hover:opacity-100`}
             variant="ghost"

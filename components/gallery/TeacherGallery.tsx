@@ -94,14 +94,14 @@ export default function TeacherGallery(): React.JSX.Element {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16">
           <div className="mb-6 md:mb-0">
-            <h2 className="font-cormorant text-3xl md:text-4xl lg:text-5xl font-light text-white mb-3 tracking-tight">
+            <h2 className="font-cormorant text-3xl md:text-4xl lg:text-5xl font-light text-neutral-300 mb-3 tracking-tight">
               Debashis Dev Roy&apos;s Gallery
             </h2>
             <p className="text-neutral-500 text-sm md:text-base max-w-md">
               Celebrating creative excellence from our community
             </p>
           </div>
-          <button className="text-xs md:text-sm text-neutral-400 hover:text-white border-b border-transparent hover:border-neutral-400 pb-1 transition-colors duration-200 w-fit">
+          <button className="text-xs md:text-sm text-neutral-400 hover:text-neutral-300 border-b border-transparent hover:border-neutral-400 pb-1 transition-colors duration-200 w-fit">
             VIEW ALL WORKS →
           </button>
         </div>
@@ -141,7 +141,7 @@ export default function TeacherGallery(): React.JSX.Element {
               </div>
 
               <div className="mt-4 md:mt-5 pl-1">
-                <h3 className="text-lg md:text-xl text-white font-medium tracking-tight">
+                <h3 className="text-lg md:text-xl text-neutral-300 font-medium tracking-tight">
                   {artwork.student}
                 </h3>
                 <p className="text-neutral-400 text-sm md:text-base mt-1 italic">
@@ -157,11 +157,11 @@ export default function TeacherGallery(): React.JSX.Element {
             onClick={toggleArtworks}
             className="inline-flex items-center space-x-2 border border-neutral-800 px-8 py-3 hover:bg-neutral-900/50 hover:border-amber-400/30 transition-all duration-300 group"
           >
-            <span className="text-sm tracking-wide text-white group-hover:text-amber-400 transition-colors duration-300">
+            <span className="text-sm tracking-wide text-neutral-300 group-hover:text-amber-400 transition-colors duration-300">
               {showMore ? "SHOW LESS" : "EXPLORE MORE"}
             </span>
             <svg
-              className={`w-4 h-4 text-white group-hover:text-amber-400 transition-all duration-300 ${
+              className={`w-4 h-4 text-neutral-300 group-hover:text-amber-400 transition-all duration-300 ${
                 showMore ? "rotate-180" : ""
               }`}
               fill="none"

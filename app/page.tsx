@@ -10,7 +10,7 @@ import Hero from "@/components/Hero/Hero";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#121212] text-white">
+    <div className="min-h-screen bg-[#121212] text-neutral-300">
       <Header />
       <main className="container mx-auto px-4 md:px-6">
         <Hero />
