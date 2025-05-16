@@ -376,8 +376,8 @@ export default function Curriculum(): React.JSX.Element {
                 &quot;
               </div> */}
               <p className="text-gray-300 italic text-sm sm:text-base relative z-10">
-                " Your potential can grow only when you can think and grow
-                through your imaginations. "
+                Your potential can grow only when you can think and grow
+                through your imaginations. 
               </p>
 
               <p className="text-gray-300 text-right text-sm mt-4 font-serif">

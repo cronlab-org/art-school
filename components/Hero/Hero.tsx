@@ -5,28 +5,27 @@ import { MapPin, Phone } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 import mandriLogo from "@/public/image-removebg-preview.png";
-import wb_logo from "@/public/image-removebg-preview (1).png";
 
 export default function Hero(): React.JSX.Element {
-  const calculateExperience = (): number => {
-    const startDate = new Date(2003, 7, 1); // August 1, 2003
-    const currentDate = new Date();
+  // const calculateExperience = (): number => {
+  //   const startDate = new Date(2003, 7, 1); // August 1, 2003
+  //   const currentDate = new Date();
 
-    let years = currentDate.getFullYear() - startDate.getFullYear();
+  //   let years = currentDate.getFullYear() - startDate.getFullYear();
 
-    // Adjust year if we haven't reached the anniversary date yet
-    if (
-      currentDate.getMonth() < startDate.getMonth() ||
-      (currentDate.getMonth() === startDate.getMonth() &&
-        currentDate.getDate() < startDate.getDate())
-    ) {
-      years--;
-    }
+  //   // Adjust year if we haven't reached the anniversary date yet
+  //   if (
+  //     currentDate.getMonth() < startDate.getMonth() ||
+  //     (currentDate.getMonth() === startDate.getMonth() &&
+  //       currentDate.getDate() < startDate.getDate())
+  //   ) {
+  //     years--;
+  //   }
 
-    return years;
-  };
+  //   return years;
+  // };
 
-  const yearsOfExperience = calculateExperience();
+  // const yearsOfExperience = calculateExperience();
 
   const handleAddressClick = () => {
     window.open(

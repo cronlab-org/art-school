@@ -6,7 +6,7 @@ import TeacherGallery from "@/components/gallery/TeacherGallery";
 import Header from "@/components/header/Header";
 import ArtistCarousel from "@/components/Hero/ArtistCarausel";
 import Hero from "@/components/Hero/Hero";
-import Hero2 from "@/components/Hero2/Hero2";
+
 
 export default function Home() {
   return (
