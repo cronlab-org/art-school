@@ -9,10 +9,10 @@ export default function Footer(): React.JSX.Element {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="space-y-6">
             <div>
-              <h3 className="text-xl font-bold text-white mb-4 font-playfair">
+              <h3 className="text-xl font-bold text-white mb-4 font-cormorant">
                 DEBASHIS DEV ROY ART SCHOOL
               </h3>
-              <p className="text-gray-400 max-w-md font-montserrat">
+              <p className="text-gray-400 max-w-md font-cormorant">
                 Inspiring creativity and fostering artistic excellence through
                 dedicated mentorship and innovative teaching methods.
               </p>

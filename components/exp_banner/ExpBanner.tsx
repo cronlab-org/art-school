@@ -13,7 +13,7 @@ const ExpBanner = () => {
               <div className="font-cormorant text-4xl sm:text-4xl md:text-5xl font-bold text-gray-300 mb-2">
                 2003
               </div>
-              <div className="font-serif italic text-xs text-gray-200/80 mb-1 tracking-widest">
+              <div className="font-cormorant italic text-xs text-gray-200/80 mb-1 tracking-widest">
                 ESTABLISHED IN
               </div>
             </div>
@@ -26,10 +26,10 @@ const ExpBanner = () => {
               </div>
             </div>
             <div>
-              <div className="font-serif text-4xl sm:text-4xl md:text-5xl font-bold text-gray-300 mb-2">
+              <div className="font-cormorant text-4xl sm:text-4xl md:text-5xl font-bold text-gray-300 mb-2">
                 50,000+
               </div>
-              <div className="font-serif italic text-xs text-gray-200/80 mb-1 tracking-widest">
+              <div className="font-cormorant italic text-xs text-gray-200/80 mb-1 tracking-widest">
                 STUDENTS TILL DATE
               </div>
             </div>

@@ -14,12 +14,12 @@ import {
 export default function Curriculum(): React.JSX.Element {
   return (
     <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="border-b-2 border-gray-600 pb-4 mb-8 relative">
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-tight">
+      <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div className="border-b-2 border-gray-300 pb-4 mb-8 relative">
+          <h2 className="font-cormorant text-3xl sm:text-4xl md:text-5xl font-bold text-gray-300 tracking-tight">
             Art Curriculum
           </h2>
-          <p className="font-montserrat text-xs text-gray-400 mt-2 tracking-widest">
+          <p className="font-cormorant text-xs text-gray-400 mt-2 tracking-widest">
             STRUCTURED LEARNING PATH • TRADITIONAL TO CONTEMPORARY • SINCE 2003
           </p>
         </div>
@@ -29,7 +29,7 @@ export default function Curriculum(): React.JSX.Element {
             <div className="bg-neutral-800/50 backdrop-blur-3xl p-6 sm:p-8  border-gray-500 shadow-lg">
               <div className="flex items-center mb-6">
                 <GraduationCap className="h-6 w-6 text-gray-300 mr-3" />
-                <h3 className="font-serif text-xl sm:text-2xl font-bold text-white">
+                <h3 className="font-cormorant text-xl sm:text-2xl font-bold text-gray-300">
                   Fine Arts Diploma Courses
                 </h3>
               </div>
@@ -52,7 +52,7 @@ export default function Curriculum(): React.JSX.Element {
                   >
                     <div className="flex items-center">
                       <div className="h-2 w-2 bg-gray-400 mr-3"></div>
-                      <h4 className="font-montserrat text-sm sm:text-base font-medium text-white">
+                      <h4 className="font-cormorant text-sm sm:text-base font-medium text-gray-300">
                         {level}
                       </h4>
                     </div>
@@ -70,7 +70,7 @@ export default function Curriculum(): React.JSX.Element {
             <div className="bg-neutral-800/50 p-6 sm:p-8   border-gray-500 shadow-lg">
               <div className="flex items-center mb-6">
                 <Users className="h-6 w-6 text-gray-300 mr-3" />
-                <h3 className="font-serif text-xl sm:text-2xl font-bold text-white">
+                <h3 className="font-cormorant text-xl sm:text-2xl font-bold text-gray-300">
                   Art for Everyone
                 </h3>
               </div>
@@ -110,14 +110,14 @@ export default function Curriculum(): React.JSX.Element {
             <div className="bg-neutral-800/50 p-6 sm:p-8   border-gray-500 shadow-lg">
               <div className="flex items-center mb-6">
                 <Palette className="h-6 w-6 text-gray-300 mr-3" />
-                <h3 className="font-serif text-xl sm:text-2xl font-bold text-white">
+                <h3 className="font-cormorant text-xl sm:text-2xl font-bold text-gray-300">
                   Specialized Courses & Techniques
                 </h3>
               </div>
 
               <div className="space-y-8">
                 <div>
-                  <h4 className="font-montserrat text-base sm:text-lg font-bold text-white mb-4 flex items-center">
+                  <h4 className="font-cormorant text-base sm:text-lg font-bold text-gray-300 mb-4 flex items-center">
                     <Ruler className="h-5 w-5 text-amber-400 mr-3" />
                     <span className="bg-white bg-clip-text text-transparent font-cormorant">
                       Advanced Drawing Techniques
@@ -137,11 +137,11 @@ export default function Curriculum(): React.JSX.Element {
                     ].map((item, index) => (
                       <div
                         key={index}
-                        className="relative group overflow-hidden rounded-lg bg-gradient-to-br from-neutral-800 to-neutral-900 p-px"
+                        className="relative group overflow-hidden rounded-lg bg-gradient-to-br from-neutral-800 to-neutral-900 p-px w-fit"
                       >
                         <div className="relative z-10 flex items-center p-3 h-full bg-neutral-900 rounded-[7px] group-hover:bg-neutral-800 transition-all duration-300">
                           <div className="w-1.5 h-1.5 rounded-full bg-amber-400 mr-3 flex-shrink-0"></div>
-                          <span className="text-xs sm:text-sm font-medium text-gray-200 group-hover:text-white">
+                          <span className="text-xs sm:text-sm font-medium text-gray-200 group-hover:text-gray-300">
                             {item}
                           </span>
                         </div>
@@ -152,7 +152,7 @@ export default function Curriculum(): React.JSX.Element {
                 </div>
 
                 <div>
-                  <h4 className="font-montserrat text-base sm:text-lg font-bold text-white mb-4 flex items-center">
+                  <h4 className="font-cormorant text-base sm:text-lg font-bold text-gray-300 mb-4 flex items-center">
                     <Droplets className="h-5 w-5 text-blue-300 mr-3" />
                     <span className="bg-white bg-clip-text text-transparent font-cormorant">
                       Watercolor Techniques
@@ -176,7 +176,7 @@ export default function Curriculum(): React.JSX.Element {
                       >
                         <div className="relative z-10 flex items-center p-3 h-full bg-neutral-900 rounded-[7px] group-hover:bg-neutral-800 transition-all duration-300">
                           <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mr-3 flex-shrink-0"></div>
-                          <span className="text-xs sm:text-sm font-medium text-gray-200 group-hover:text-white">
+                          <span className="text-xs sm:text-sm font-medium text-gray-200 group-hover:text-gray-300">
                             {item}
                           </span>
                         </div>
@@ -187,7 +187,7 @@ export default function Curriculum(): React.JSX.Element {
                 </div>
 
                 <div>
-                  <h4 className="font-montserrat text-base sm:text-lg font-bold text-white mb-4 flex items-center">
+                  <h4 className="font-cormorant text-base sm:text-lg font-bold text-gray-300 mb-4 flex items-center">
                     <Paintbrush className="h-5 w-5 text-purple-300 mr-3" />
                     <span className="bg-white bg-clip-text text-transparent font-cormorant">
                       Acrylic Techniques
@@ -211,7 +211,7 @@ export default function Curriculum(): React.JSX.Element {
                       >
                         <div className="relative z-10 flex items-center p-3 h-full bg-neutral-900 rounded-[7px] group-hover:bg-neutral-800 transition-all duration-300">
                           <div className="w-1.5 h-1.5 rounded-full bg-purple-400 mr-3 flex-shrink-0"></div>
-                          <span className="text-xs sm:text-sm font-medium text-gray-200 group-hover:text-white">
+                          <span className="text-xs sm:text-sm font-medium text-gray-200 group-hover:text-gray-300">
                             {item}
                           </span>
                         </div>
@@ -222,7 +222,7 @@ export default function Curriculum(): React.JSX.Element {
                 </div>
 
                 <div>
-                  <h4 className="font-montserrat text-base sm:text-lg font-bold text-white mb-4 flex items-center">
+                  <h4 className="font-cormorant text-base sm:text-lg font-bold text-gray-300 mb-4 flex items-center">
                     <Palette className="h-5 w-5 text-emerald-300 mr-3" />
                     <span className="bg-white bg-clip-text text-transparent font-cormorant">
                       Oil Painting
@@ -248,7 +248,7 @@ export default function Curriculum(): React.JSX.Element {
                       >
                         <div className="relative z-10 flex items-center p-3 h-full bg-neutral-900 rounded-[7px] group-hover:bg-neutral-800 transition-all duration-300">
                           <div className="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-3 flex-shrink-0"></div>
-                          <span className="text-xs sm:text-sm font-medium text-gray-200 group-hover:text-white">
+                          <span className="text-xs sm:text-sm font-medium text-gray-200 group-hover:text-gray-300">
                             {item}
                           </span>
                         </div>
@@ -259,7 +259,7 @@ export default function Curriculum(): React.JSX.Element {
                 </div>
 
                 <div>
-                  <h4 className="font-montserrat text-base sm:text-lg font-bold text-white mb-4 flex items-center">
+                  <h4 className="font-cormorant text-base sm:text-lg font-bold text-gray-300 mb-4 flex items-center">
                     <Globe className="h-5 w-5 text-rose-300 mr-3" />
                     <span className="bg-white bg-clip-text text-transparent font-cormorant">
                       Folk & Cultural Art
@@ -278,7 +278,7 @@ export default function Curriculum(): React.JSX.Element {
                         className="relative group overflow-hidden rounded-full bg-gradient-to-br from-neutral-800 to-neutral-900 p-px"
                       >
                         <div className="relative z-10 flex items-center px-4 py-2 bg-neutral-900 rounded-full group-hover:bg-neutral-800 transition-all duration-300">
-                          <span className="text-xs sm:text-sm font-medium text-gray-200 group-hover:text-white">
+                          <span className="text-xs sm:text-sm font-medium text-gray-200 group-hover:text-gray-300">
                             {style}
                           </span>
                         </div>
@@ -307,7 +307,7 @@ export default function Curriculum(): React.JSX.Element {
                     d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
-                <h3 className="font-serif text-xl sm:text-2xl font-bold text-white">
+                <h3 className="font-cormorant text-xl sm:text-2xl font-bold text-gray-300">
                   Corporate & Professional Programs
                 </h3>
               </div>
@@ -336,7 +336,7 @@ export default function Curriculum(): React.JSX.Element {
             <div className="bg-neutral-800/50 p-6 sm:p-8   border-gray-500 shadow-lg">
               <div className="flex items-center mb-6">
                 <Laptop className="h-6 w-6 text-gray-300 mr-3" />
-                <h3 className="font-serif text-xl sm:text-2xl font-bold text-white">
+                <h3 className="font-cormorant text-xl sm:text-2xl font-bold text-gray-300">
                   Interactive Online Classes
                 </h3>
               </div>
@@ -346,7 +346,7 @@ export default function Curriculum(): React.JSX.Element {
               </p>
 
               <div className="bg-neutral-900 p-4 border border-gray-700 mb-4">
-                <h4 className="font-montserrat text-sm font-bold text-gray-200 mb-2">
+                <h4 className="font-cormorant text-sm font-bold text-gray-200 mb-2">
                   Students:
                 </h4>
                 <div className="flex flex-wrap gap-2">
@@ -362,7 +362,7 @@ export default function Curriculum(): React.JSX.Element {
               </div>
 
               <div className="bg-neutral-900 border border-gray-700 p-4">
-                <h4 className="font-montserrat text-xs font-bold text-gray-300 mb-1">
+                <h4 className="font-cormorant text-xs font-bold text-gray-300 mb-1">
                   NOTE
                 </h4>
                 <p className="text-gray-400 text-xs">
@@ -372,7 +372,7 @@ export default function Curriculum(): React.JSX.Element {
               </div>
             </div>
             <div className="bg-neutral-800/50 p-6 sm:p-8 border border-gray-700 shadow-lg relative">
-              {/* <div className="absolute top-4 left-4 text-5xl text-gray-700 font-serif">
+              {/* <div className="absolute top-4 left-4 text-5xl text-gray-700 font-cormorant">
                 &quot;
               </div> */}
               <p className="text-gray-300 italic text-sm sm:text-base relative z-10">
@@ -380,7 +380,7 @@ export default function Curriculum(): React.JSX.Element {
                 through your imaginations. 
               </p>
 
-              <p className="text-gray-300 text-right text-sm mt-4 font-serif">
+              <p className="text-gray-300 text-right text-sm mt-4 font-cormorant">
                 — Artist Debashis Dev Roy
               </p>
             </div>
