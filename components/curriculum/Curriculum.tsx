@@ -119,8 +119,8 @@ export default function Curriculum(): React.JSX.Element {
               <div className="space-y-8">
                 <div>
                   <h4 className="font-montserrat text-base sm:text-lg font-bold text-white mb-4 flex items-center">
-                    <Ruler className="h-5 w-5 text-amber-300 mr-3" />
-                    <span className="bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent font-cormorant">
+                    <Ruler className="h-5 w-5 text-amber-400 mr-3" />
+                    <span className="bg-white bg-clip-text text-transparent font-cormorant">
                       Advanced Drawing Techniques
                     </span>
                   </h4>
@@ -155,7 +155,7 @@ export default function Curriculum(): React.JSX.Element {
                 <div>
                   <h4 className="font-montserrat text-base sm:text-lg font-bold text-white mb-4 flex items-center">
                     <Droplets className="h-5 w-5 text-blue-300 mr-3" />
-                    <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent font-cormorant">
+                    <span className="bg-white bg-clip-text text-transparent font-cormorant">
                       Watercolor Techniques
                     </span>
                   </h4>
@@ -190,7 +190,7 @@ export default function Curriculum(): React.JSX.Element {
                 <div>
                   <h4 className="font-montserrat text-base sm:text-lg font-bold text-white mb-4 flex items-center">
                     <Paintbrush className="h-5 w-5 text-purple-300 mr-3" />
-                    <span className="bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent font-cormorant">
+                    <span className="bg-white bg-clip-text text-transparent font-cormorant">
                       Acrylic Techniques
                     </span>
                   </h4>
@@ -225,7 +225,7 @@ export default function Curriculum(): React.JSX.Element {
                 <div>
                   <h4 className="font-montserrat text-base sm:text-lg font-bold text-white mb-4 flex items-center">
                     <Palette className="h-5 w-5 text-emerald-300 mr-3" />
-                    <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent font-cormorant">
+                    <span className="bg-white bg-clip-text text-transparent font-cormorant">
                       Oil Painting
                     </span>
                   </h4>
@@ -262,7 +262,7 @@ export default function Curriculum(): React.JSX.Element {
                 <div>
                   <h4 className="font-montserrat text-base sm:text-lg font-bold text-white mb-4 flex items-center">
                     <Globe className="h-5 w-5 text-rose-300 mr-3" />
-                    <span className="bg-gradient-to-r from-rose-400 to-rose-600 bg-clip-text text-transparent font-cormorant">
+                    <span className="bg-white bg-clip-text text-transparent font-cormorant">
                       Folk & Cultural Art
                     </span>
                   </h4>

@@ -12,7 +12,7 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import { useCallback } from "react";
 
-export default function AppleStyleCarousel(): React.JSX.Element {
+export default function ArtistCarousel(): React.JSX.Element {
   const [api, setApi] = useState<any>();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
