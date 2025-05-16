@@ -13,7 +13,7 @@ import {
 
 export default function Curriculum(): React.JSX.Element {
   return (
-    <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8">
+    <section className="py-12 sm:py-16 md:py-20  sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div className="border-b-2 border-gray-300 pb-4 mb-8 relative">
           <h2 className="font-cormorant text-3xl sm:text-4xl md:text-5xl font-bold text-gray-300 tracking-tight">
