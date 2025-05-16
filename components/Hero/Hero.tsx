@@ -21,6 +21,14 @@ export default function Hero(): React.JSX.Element {
     );
   };
 
+  const handleAddressClick = () => {
+    const encodedAddress = encodeURIComponent(address);
+    window.open(
+      `https://www.google.com/maps/search/?api=1&query=${encodedAddress}`,
+      "_blank"
+    );
+  };
+
   return (
     <section className="py-6 sm:py-8 md:py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[1550px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -59,7 +67,11 @@ export default function Hero(): React.JSX.Element {
                 Admissions Office
               </h2>
               <div className="mt-2 sm:mt-4 space-y-2 sm:space-y-3">
-                <div className="flex items-start text-gray-400 py-1">
+                <div
+                  role="button"
+                  className="flex items-start text-gray-400 hover:text-white transition-colors cursor-pointer py-1"
+                  onClick={handleAddressClick}
+                >
                   <MapPin className="h-3 w-3 sm:h-4 sm:w-4 mr-2 sm:mr-3 mt-0.5 flex-shrink-0" />
                   <span className="text-xs sm:text-sm">{address}</span>
                 </div>
@@ -109,17 +121,31 @@ export default function Hero(): React.JSX.Element {
             <div className="absolute bottom-0 left-0 right-0 h-1 bg-neutral-800"></div>
 
             <div className="text-center">
-              <div className="font-serif italic text-xs text-gray-200/80 mb-1 tracking-widest">
-                ESTABLISHED IN
-              </div>
-              <div className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-gray-300 mb-2">
-                2003
-              </div>
-              <div className="text-5xl sm:text-6xl md:text-7xl font-bold text-gray-200 leading-none font-cormorant">
-                {new Date().getFullYear() - 2003}+
-              </div>
-              <div className="font-serif text-lg sm:text-xl uppercase tracking-wider text-gray-100 mt-2">
-                Years of Serving Artistic Excellence
+              <div className="flex items-center justify-center gap-8 mb-8">
+                <div>
+                  <div className="font-cormorant text-3xl sm:text-4xl md:text-5xl font-bold text-gray-300 mb-2">
+                    2003
+                  </div>
+                  <div className="font-serif italic text-xs text-gray-200/80 mb-1 tracking-widest">
+                    ESTABLISHED IN
+                  </div>
+                </div>
+                <div>
+                  <div className="font-cormorant text-3xl sm:text-4xl md:text-5xl font-bold text-gray-300 mb-2">
+                    {new Date().getFullYear() - 2003}+
+                  </div>
+                  <div className="font-cormorant italic text-xs text-gray-200/80 mb-1 tracking-widest">
+                    YEARS OF SERVING ARTISTIC EXCELLENCE
+                  </div>
+                </div>
+                <div>
+                  <div className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-gray-300 mb-2">
+                    50,000+
+                  </div>
+                  <div className="font-serif italic text-xs text-gray-200/80 mb-1 tracking-widest">
+                    STUDENTS TILL DATE
+                  </div>
+                </div>
               </div>
 
               <div className="mt-4 sm:mt-6 mb-3 sm:mb-4 h-px bg-neutral-700 w-3/4 mx-auto relative">
