@@ -29,7 +29,7 @@ export default function Hero2(): React.JSX.Element {
       <div className="max-w-[1550px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-start">
           <div>
-            <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight leading-snug sm:leading-normal md:leading-tight">
+            <h1 className="font-cormorant text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight leading-snug sm:leading-normal md:leading-tight">
               CULTIVATING EXCELLENCE <br className="hidden md:block" />
               IN FINE ARTS
             </h1>
@@ -42,7 +42,7 @@ export default function Hero2(): React.JSX.Element {
             </p>
 
             <div className="mt-4 sm:mt-6 group flex items-center space-x-2 cursor-pointer w-fit">
-              <span className="text-xs sm:text-sm tracking-wider font-montserrat">
+              <span className="text-xs sm:text-sm tracking-wider font-cormorant">
                 EXPLORE PROGRAMS
               </span>
               <div className="relative w-12 sm:w-16 h-px bg-gray-400">
@@ -58,7 +58,7 @@ export default function Hero2(): React.JSX.Element {
 
           <div className="space-y-4 sm:space-y-6 md:space-y-8 w-full">
             <div className="border-l-2 border-gray-800 pl-4 sm:pl-6">
-              <h2 className="font-serif text-lg sm:text-xl font-semibold tracking-tight uppercase">
+              <h2 className="font-cormorant text-lg sm:text-xl font-semibold tracking-tight uppercase">
                 Admissions Office
               </h2>
               <div className="mt-2 sm:mt-4 space-y-2 sm:space-y-3">

@@ -81,7 +81,7 @@ export default function StudentGallery(): React.JSX.Element {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16">
           <div className="mb-6 md:mb-0">
-            <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-light text-white mb-3 tracking-tight">
+            <h2 className="font-cormorant text-3xl md:text-4xl lg:text-5xl font-light text-white mb-3 tracking-tight">
               Student Gallery
             </h2>
             <p className="text-neutral-500 text-sm md:text-base max-w-md">

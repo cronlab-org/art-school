@@ -70,7 +70,7 @@ export default function Hero(): React.JSX.Element {
               <div className="h-px flex-1 bg-neutral-800" />
             </div>
 
-            <h2 className="font-serif text-2xl md:text-3xl font-medium tracking-tight leading-tight text-neutral-100">
+            <h2 className="font-cormorant text-2xl md:text-3xl font-medium tracking-tight leading-tight text-neutral-100">
               Boost Your Career With Fine Arts Diploma
             </h2>
 
@@ -90,7 +90,7 @@ export default function Hero(): React.JSX.Element {
           </div> */}
 
           <div className="">
-            <h1 className="font-serif text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold tracking-tight leading-snug sm:leading-normal md:leading-tight">
+            <h1 className="font-cormorant text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold tracking-tight leading-snug sm:leading-normal md:leading-tight">
               CULTIVATING EXCELLENCE <br className="hidden md:block" />
               IN FINE ARTS
             </h1>
@@ -103,7 +103,7 @@ export default function Hero(): React.JSX.Element {
             </p>
 
             <div className="mt-4 sm:mt-6 group flex items-center space-x-2 cursor-pointer w-fit">
-              <span className="text-xs sm:text-sm tracking-wider font-montserrat">
+              <span className="text-xs sm:text-sm tracking-wider font-cormorant">
                 EXPLORE PROGRAMS
               </span>
               <div className="relative w-12 sm:w-16 h-px bg-gray-400">
@@ -121,7 +121,7 @@ export default function Hero(): React.JSX.Element {
           <div className="mt-8 space-y-6">
             {/* Admissions Office */}
             <div className="border-l-2 border-neutral-700 pl-4">
-              <h3 className="font-serif text-sm font-semibold tracking-tight uppercase text-neutral-200">
+              <h3 className="font-cormorant text-sm font-semibold tracking-tight uppercase text-neutral-200">
                 Admissions Office
               </h3>
               <div className="mt-3 space-y-2">
