@@ -8,9 +8,9 @@ const ExpBanner = () => {
         <div className="absolute bottom-0 left-0 right-0 h-1 bg-neutral-800"></div>
 
         <div className="text-center">
-          <div className="flex items-center justify-center gap-8 mb-8">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-8">
             <div>
-              <div className="font-cormorant text-3xl sm:text-4xl md:text-5xl font-bold text-gray-300 mb-2">
+              <div className="font-cormorant text-4xl sm:text-4xl md:text-5xl font-bold text-gray-300 mb-2">
                 2003
               </div>
               <div className="font-serif italic text-xs text-gray-200/80 mb-1 tracking-widest">
@@ -18,7 +18,7 @@ const ExpBanner = () => {
               </div>
             </div>
             <div>
-              <div className="font-cormorant text-3xl sm:text-4xl md:text-5xl font-bold text-gray-300 mb-2">
+              <div className="font-cormorant text-4xl sm:text-4xl md:text-5xl font-bold text-gray-300 mb-2">
                 20+
               </div>
               <div className="font-cormorant italic text-xs text-gray-200/80 mb-1 tracking-widest">
@@ -26,7 +26,7 @@ const ExpBanner = () => {
               </div>
             </div>
             <div>
-              <div className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-gray-300 mb-2">
+              <div className="font-serif text-4xl sm:text-4xl md:text-5xl font-bold text-gray-300 mb-2">
                 50,000+
               </div>
               <div className="font-serif italic text-xs text-gray-200/80 mb-1 tracking-widest">
