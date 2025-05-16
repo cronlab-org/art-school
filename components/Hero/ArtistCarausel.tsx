@@ -159,8 +159,8 @@ export default function ArtistCarousel(): React.JSX.Element {
               onClick={() => api?.scrollTo(idx)}
               className={`h-2 transition-all rounded-full ${
                 currentIndex === idx
-                  ? "bg-black dark:bg-white w-6"
-                  : "bg-black/20 dark:bg-white/30 w-2"
+                  ? "bg-white dark:bg-white w-6"
+                  : "bg-white/20 dark:bg-white/30 w-2"
               }`}
               aria-label={`Go to slide ${idx + 1}`}
             />
