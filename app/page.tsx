@@ -17,9 +17,8 @@ export default function Home() {
         <ExpBanner />
         <Curriculum />
         <TeacherGallery />
-        <ArtistCarousel />
         <StudentGallery />
-        <Hero2 />
+        <ArtistCarousel />
       </main>
       <Footer />
     </div>
