@@ -2,7 +2,23 @@ import Image from "next/image";
 import React from "react";
 
 export default function FeaturedArticle(): React.JSX.Element {
-  const yearsOfExperience = new Date().getFullYear() - 2003;
+  const calculateExperience = () => {
+    const startDate = new Date(2003, 7, 1);
+    const currentDate = new Date();
+
+    let years = currentDate.getFullYear() - startDate.getFullYear();
+
+    if (
+      currentDate.getMonth() < 7 ||
+      (currentDate.getMonth() === 7 && currentDate.getDate() < 1)
+    ) {
+      years--;
+    }
+
+    return years;
+  };
+
+  const yearsOfExperience = calculateExperience();
 
   return (
     <section className="mt-12">
