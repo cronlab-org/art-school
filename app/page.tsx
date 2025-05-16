@@ -4,6 +4,8 @@ import Header from "@/components/header/Header";
 import Hero from "@/components/Hero/Hero";
 import StudentGallery from "@/components/gallery/StudentGallerySection";
 import ArtistCarousel from "@/components/Featured/ArtistCarausel";
+import Curriculum from "@/components/curriculum/Curriculum";
+import TeacherGallery from "@/components/gallery/TeacherGallery";
 
 export default function Home() {
   return (
@@ -12,6 +14,8 @@ export default function Home() {
       <main className="container mx-auto px-4 md:px-6">
         <Hero />
         <FeaturedArticle />
+        <Curriculum />
+        <TeacherGallery />
         <ArtistCarousel />
         <StudentGallery />
       </main>
