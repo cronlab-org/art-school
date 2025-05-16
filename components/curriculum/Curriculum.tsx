@@ -16,7 +16,6 @@ export default function Curriculum(): React.JSX.Element {
     <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="border-b-2 border-gray-600 pb-4 mb-8 relative">
-          <div className="absolute bottom-0 left-0 w-24 h-0.5 bg-gray-400"></div>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-tight">
             Art Curriculum
           </h2>
@@ -27,7 +26,7 @@ export default function Curriculum(): React.JSX.Element {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2 space-y-8">
-            <div className="bg-neutral-800/50 p-6 sm:p-8 border-l-4 border-gray-500 shadow-lg">
+            <div className="bg-neutral-800/50 backdrop-blur-3xl p-6 sm:p-8  border-gray-500 shadow-lg">
               <div className="flex items-center mb-6">
                 <GraduationCap className="h-6 w-6 text-gray-300 mr-3" />
                 <h3 className="font-serif text-xl sm:text-2xl font-bold text-white">
@@ -68,7 +67,7 @@ export default function Curriculum(): React.JSX.Element {
               </div>
             </div>
 
-            <div className="bg-neutral-800/50 p-6 sm:p-8 border-l-4 border-gray-500 shadow-lg">
+            <div className="bg-neutral-800/50 p-6 sm:p-8   border-gray-500 shadow-lg">
               <div className="flex items-center mb-6">
                 <Users className="h-6 w-6 text-gray-300 mr-3" />
                 <h3 className="font-serif text-xl sm:text-2xl font-bold text-white">
@@ -108,7 +107,7 @@ export default function Curriculum(): React.JSX.Element {
               </div>
             </div>
 
-            <div className="bg-neutral-800/50 p-6 sm:p-8 border-l-4 border-gray-500 shadow-lg">
+            <div className="bg-neutral-800/50 p-6 sm:p-8   border-gray-500 shadow-lg">
               <div className="flex items-center mb-6">
                 <Palette className="h-6 w-6 text-gray-300 mr-3" />
                 <h3 className="font-serif text-xl sm:text-2xl font-bold text-white">
@@ -119,8 +118,8 @@ export default function Curriculum(): React.JSX.Element {
               <div className="space-y-8">
                 <div>
                   <h4 className="font-montserrat text-base sm:text-lg font-bold text-white mb-4 flex items-center">
-                    <Ruler className="h-5 w-5 text-amber-300 mr-3" />
-                    <span className="bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent font-cormorant">
+                    <Ruler className="h-5 w-5 text-amber-400 mr-3" />
+                    <span className="bg-white bg-clip-text text-transparent font-cormorant">
                       Advanced Drawing Techniques
                     </span>
                   </h4>
@@ -155,7 +154,7 @@ export default function Curriculum(): React.JSX.Element {
                 <div>
                   <h4 className="font-montserrat text-base sm:text-lg font-bold text-white mb-4 flex items-center">
                     <Droplets className="h-5 w-5 text-blue-300 mr-3" />
-                    <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent font-cormorant">
+                    <span className="bg-white bg-clip-text text-transparent font-cormorant">
                       Watercolor Techniques
                     </span>
                   </h4>
@@ -190,7 +189,7 @@ export default function Curriculum(): React.JSX.Element {
                 <div>
                   <h4 className="font-montserrat text-base sm:text-lg font-bold text-white mb-4 flex items-center">
                     <Paintbrush className="h-5 w-5 text-purple-300 mr-3" />
-                    <span className="bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent font-cormorant">
+                    <span className="bg-white bg-clip-text text-transparent font-cormorant">
                       Acrylic Techniques
                     </span>
                   </h4>
@@ -225,7 +224,7 @@ export default function Curriculum(): React.JSX.Element {
                 <div>
                   <h4 className="font-montserrat text-base sm:text-lg font-bold text-white mb-4 flex items-center">
                     <Palette className="h-5 w-5 text-emerald-300 mr-3" />
-                    <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent font-cormorant">
+                    <span className="bg-white bg-clip-text text-transparent font-cormorant">
                       Oil Painting
                     </span>
                   </h4>
@@ -262,7 +261,7 @@ export default function Curriculum(): React.JSX.Element {
                 <div>
                   <h4 className="font-montserrat text-base sm:text-lg font-bold text-white mb-4 flex items-center">
                     <Globe className="h-5 w-5 text-rose-300 mr-3" />
-                    <span className="bg-gradient-to-r from-rose-400 to-rose-600 bg-clip-text text-transparent font-cormorant">
+                    <span className="bg-white bg-clip-text text-transparent font-cormorant">
                       Folk & Cultural Art
                     </span>
                   </h4>
@@ -293,7 +292,7 @@ export default function Curriculum(): React.JSX.Element {
           </div>
 
           <div className="space-y-8">
-            <div className="bg-neutral-800/50 p-6 sm:p-8 border-l-4 border-gray-500 shadow-lg">
+            <div className="bg-neutral-800/50 p-6 sm:p-8   border-gray-500 shadow-lg">
               <div className="flex items-center mb-6">
                 <svg
                   className="h-6 w-6 text-gray-300 mr-3"
@@ -334,8 +333,7 @@ export default function Curriculum(): React.JSX.Element {
                 ))}
               </div>
             </div>
-
-            <div className="bg-neutral-800/50 p-6 sm:p-8 border-l-4 border-gray-500 shadow-lg">
+            <div className="bg-neutral-800/50 p-6 sm:p-8   border-gray-500 shadow-lg">
               <div className="flex items-center mb-6">
                 <Laptop className="h-6 w-6 text-gray-300 mr-3" />
                 <h3 className="font-serif text-xl sm:text-2xl font-bold text-white">
@@ -373,15 +371,15 @@ export default function Curriculum(): React.JSX.Element {
                 </p>
               </div>
             </div>
-
             <div className="bg-neutral-800/50 p-6 sm:p-8 border border-gray-700 shadow-lg relative">
-              <div className="absolute top-4 left-4 text-5xl text-gray-700 font-serif">
+              {/* <div className="absolute top-4 left-4 text-5xl text-gray-700 font-serif">
                 &quot;
-              </div>
+              </div> */}
               <p className="text-gray-300 italic text-sm sm:text-base relative z-10">
-                Your potential can grow only when you can think and grow through
-                your imaginations.
+                Your potential can grow only when you can think and grow
+                through your imaginations. 
               </p>
+
               <p className="text-gray-300 text-right text-sm mt-4 font-serif">
                 — Artist Debashis Dev Roy
               </p>

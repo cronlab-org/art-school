@@ -12,7 +12,7 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import { useCallback } from "react";
 
-export default function AppleStyleCarousel(): React.JSX.Element {
+export default function ArtistCarousel(): React.JSX.Element {
   const [api, setApi] = useState<any>();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
@@ -159,8 +159,8 @@ export default function AppleStyleCarousel(): React.JSX.Element {
               onClick={() => api?.scrollTo(idx)}
               className={`h-2 transition-all rounded-full ${
                 currentIndex === idx
-                  ? "bg-black dark:bg-white w-6"
-                  : "bg-black/20 dark:bg-white/30 w-2"
+                  ? "bg-white dark:bg-white w-6"
+                  : "bg-white/20 dark:bg-white/30 w-2"
               }`}
               aria-label={`Go to slide ${idx + 1}`}
             />

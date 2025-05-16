@@ -4,12 +4,12 @@ import React from "react";
 export default function Header(): React.JSX.Element {
   return (
     <header className="sticky top-0 z-50 bg-[#121212] border-b border-gray-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1550px] mx-auto px-6 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-14">
           <div className="flex items-center space-x-4">
             <Link
               href="/"
-              className="text-2xl tracking-widest font-playfair font-bold"
+              className="text-base lg:text-2xl tracking-widest font-playfair font-bold"
             >
               DEBASHIS DEV ROY ART SCHOOL
             </Link>
