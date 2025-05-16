@@ -82,7 +82,7 @@ export default function Hero(): React.JSX.Element {
             </p>
 
             <div className="mt-6 flex flex-wrap items-center gap-4">
-              <button className="text-xs tracking-wider border-b border-neutral-600 hover:border-neutral-100 pb-0.5 transition-colors text-neutral-300 hover:text-white">
+              <button className="text-xs tracking-wider border-b border-neutral-600 hover:border-neutral-100 pb-0.5 transition-colors text-neutral-300 hover:text-neutral-300">
                 VIEW COURSES
               </button>
               <div className="text-xs text-neutral-500 font-mono">SINCE 2003</div>
@@ -95,7 +95,7 @@ export default function Hero(): React.JSX.Element {
               IN FINE ARTS
             </h1>
 
-            <p className="mt-3 sm:mt-4 text-gray-400 max-w-xl text-xs sm:text-sm md:text-base font-cormorante italic">
+            <p className="mt-3 sm:mt-4 text-neutral-400 max-w-xl text-xs sm:text-sm md:text-base font-cormorante italic">
               Join Debashis Dev Roy Art School - Kolkata&apos;s leading
               institution for professional art training. Our certified online
               art courses combine traditional techniques with contemporary
@@ -127,27 +127,27 @@ export default function Hero(): React.JSX.Element {
               <div className="mt-3 space-y-2">
                 <div
                   role="button"
-                  className="flex items-start text-neutral-400 hover:text-white transition-colors cursor-pointer group"
+                  className="flex items-start text-neutral-400 hover:text-neutral-300 transition-colors cursor-pointer group"
                   onClick={handleAddressClick}
                 >
-                  <MapPin className="h-4 w-4 mr-3 mt-0.5 flex-shrink-0 group-hover:text-white transition-colors" />
+                  <MapPin className="h-4 w-4 mr-3 mt-0.5 flex-shrink-0 group-hover:text-neutral-300 transition-colors" />
                   <span className="text-xs lg:text-sm">{ADDRESS}</span>
                 </div>
                 <div
                   role="button"
-                  className="flex items-center text-neutral-400 hover:text-white transition-colors cursor-pointer group"
+                  className="flex items-center text-neutral-400 hover:text-neutral-300 transition-colors cursor-pointer group"
                   onClick={handleCallClick}
                 >
-                  <Phone className="h-4 w-4 mr-3 group-hover:text-white transition-colors" />
+                  <Phone className="h-4 w-4 mr-3 group-hover:text-neutral-300 transition-colors" />
                   <span className="text-xs lg:text-sm">+91 98740 94338</span>
                 </div>
                 <div
                   role="button"
-                  className="flex items-center text-neutral-400 hover:text-white transition-colors cursor-pointer group py-1"
+                  className="flex items-center text-neutral-400 hover:text-neutral-300 transition-colors cursor-pointer group py-1"
                   onClick={handleWhatsAppClick}
                 >
                   <svg
-                    className="h-4 w-4 mr-3 group-hover:text-white transition-colors"
+                    className="h-4 w-4 mr-3 group-hover:text-neutral-300 transition-colors"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -169,11 +169,11 @@ export default function Hero(): React.JSX.Element {
               <div className="text-xs lg:text-sm space-y-1">
                 <p className="text-neutral-400">
                   Affiliated to{" "}
-                  <span className="text-white">Bharatiya Charukala Mandir</span>
+                  <span className="text-neutral-300">Bharatiya Charukala Mandir</span>
                 </p>
                 <p className="text-neutral-400">
                   Licensed by{" "}
-                  <span className="text-white">Govt. of West Bengal</span>
+                  <span className="text-neutral-300">Govt. of West Bengal</span>
                 </p>
               </div>
             </div>

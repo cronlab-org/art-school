@@ -10,26 +10,26 @@ const ExpBanner = () => {
         <div className="text-center">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-8">
             <div>
-              <div className="font-cormorant text-4xl sm:text-4xl md:text-5xl font-bold text-gray-300 mb-2">
+              <div className="font-cormorant text-4xl sm:text-4xl md:text-5xl font-bold text-neutral-300 mb-2">
                 2003
               </div>
-              <div className="font-cormorant italic text-xs text-gray-200/80 mb-1 tracking-widest">
+              <div className="font-cormorant italic text-xs text-neutral-200/80 mb-1 tracking-widest">
                 ESTABLISHED IN
               </div>
             </div>
             <div>
-              <div className="font-cormorant text-4xl sm:text-4xl md:text-5xl font-bold text-gray-300 mb-2">
+              <div className="font-cormorant text-4xl sm:text-4xl md:text-5xl font-bold text-neutral-300 mb-2">
                 20+
               </div>
-              <div className="font-cormorant italic text-xs text-gray-200/80 mb-1 tracking-widest">
+              <div className="font-cormorant italic text-xs text-neutral-200/80 mb-1 tracking-widest">
                 YEARS OF SERVING ARTISTIC EXCELLENCE
               </div>
             </div>
             <div>
-              <div className="font-cormorant text-4xl sm:text-4xl md:text-5xl font-bold text-gray-300 mb-2">
+              <div className="font-cormorant text-4xl sm:text-4xl md:text-5xl font-bold text-neutral-300 mb-2">
                 50,000+
               </div>
-              <div className="font-cormorant italic text-xs text-gray-200/80 mb-1 tracking-widest">
+              <div className="font-cormorant italic text-xs text-neutral-200/80 mb-1 tracking-widest">
                 STUDENTS TILL DATE
               </div>
             </div>
