@@ -9,7 +9,7 @@ export default function Header(): React.JSX.Element {
           <div className="flex items-center space-x-4">
             <Link
               href="/"
-              className="text-base lg:text-2xl tracking-widest font-cormorant font-bold"
+              className="text-base lg:text-2xl tracking-tighter font-playfair font-bold"
             >
               DEBASHIS DEV ROY ART SCHOOL
             </Link>

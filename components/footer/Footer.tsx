@@ -12,7 +12,7 @@ export default function Footer(): React.JSX.Element {
               <h3 className="text-xl font-bold text-neutral-300 mb-4 font-cormorant">
                 DEBASHIS DEV ROY ART SCHOOL
               </h3>
-              <p className="text-neutral-400 max-w-md font-cormorant">
+              <p className="text-neutral-400 max-w-md font-cormorant italic">
                 Inspiring creativity and fostering artistic excellence through
                 dedicated mentorship and innovative teaching methods.
               </p>
