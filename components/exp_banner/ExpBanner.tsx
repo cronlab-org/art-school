@@ -1,9 +1,27 @@
 import React from "react";
 
-const ExpBanner = () => {
+export default function ExpBanner(): React.JSX.Element {
+  const calculateExperience = (): number => {
+    const startDate = new Date(2003, 8, 1);
+    const currentDate = new Date();
+
+    let years = currentDate.getFullYear() - startDate.getFullYear();
+
+    if (
+      currentDate.getMonth() < startDate.getMonth() ||
+      (currentDate.getMonth() === startDate.getMonth() &&
+        currentDate.getDate() < startDate.getDate())
+    ) {
+      years--;
+    }
+
+    return years;
+  };
+
+  const yearsOfExperience = calculateExperience();
   return (
-    <div className="mt-8 sm:mt-12  pt-6 sm:pt-8">
-      <div className="relative bg-[#121212] p-4 sm:p-6 md:p-8 shadow-2xl max-w-4xl mx-auto">
+    <div className="mt-8 sm:mt-12 pt-6 sm:pt-8">
+      <div className="relative bg-[#121212] p-4 sm:p-6 md:p-8 shadow-2xl max-w-7xl mx-auto">
         <div className="absolute top-0 left-0 right-0 h-1 bg-neutral-800"></div>
         <div className="absolute bottom-0 left-0 right-0 h-1 bg-neutral-800"></div>
 
@@ -19,7 +37,7 @@ const ExpBanner = () => {
             </div>
             <div>
               <div className="font-cormorant text-4xl sm:text-4xl md:text-5xl font-bold text-neutral-300 mb-2">
-                20+
+                {yearsOfExperience}+
               </div>
               <div className="font-cormorant italic text-xs text-neutral-200/80 mb-1 tracking-widest">
                 YEARS OF SERVING ARTISTIC EXCELLENCE
@@ -49,6 +67,4 @@ const ExpBanner = () => {
       </div>
     </div>
   );
-};
-
-export default ExpBanner;
+}

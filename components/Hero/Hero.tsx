@@ -7,26 +7,6 @@ import React from "react";
 import mandriLogo from "@/public/image-removebg-preview.png";
 
 export default function Hero(): React.JSX.Element {
-  // const calculateExperience = (): number => {
-  //   const startDate = new Date(2003, 7, 1); // August 1, 2003
-  //   const currentDate = new Date();
-
-  //   let years = currentDate.getFullYear() - startDate.getFullYear();
-
-  //   // Adjust year if we haven't reached the anniversary date yet
-  //   if (
-  //     currentDate.getMonth() < startDate.getMonth() ||
-  //     (currentDate.getMonth() === startDate.getMonth() &&
-  //       currentDate.getDate() < startDate.getDate())
-  //   ) {
-  //     years--;
-  //   }
-
-  //   return years;
-  // };
-
-  // const yearsOfExperience = calculateExperience();
-
   const handleAddressClick = () => {
     window.open(
       `https://maps.google.com/?q=${encodeURIComponent(ADDRESS)}`,
@@ -46,17 +26,20 @@ export default function Hero(): React.JSX.Element {
   return (
     <section className="mt-12">
       <div className="grid grid-cols-1 md:grid-cols-5 gap-0.5 bg-neutral-800 overflow-hidden border border-neutral-800 rounded-sm">
-        {/* Image Column */}
         <div className="md:col-span-3 relative group overflow-hidden">
           <Image
-            src="/featured.jpg"
+            src="/Hero.png"
             alt="Art students working in studio"
             width={1200}
             height={1200}
             priority
-            className="w-full h-full object-cover grayscale transition-all duration-700 group-hover:scale-105"
+            className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
+            quality={100}
+            style={{
+              color: "transparent",
+            }}
+            onLoadingComplete={(img) => (img.style.opacity = "1")}
           />
-          <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-300" />
         </div>
 
         {/* Content Column */}
@@ -169,7 +152,9 @@ export default function Hero(): React.JSX.Element {
               <div className="text-xs lg:text-sm space-y-1">
                 <p className="text-neutral-400">
                   Affiliated to{" "}
-                  <span className="text-neutral-300">Bharatiya Charukala Mandir</span>
+                  <span className="text-neutral-300">
+                    Bharatiya Charukala Mandir
+                  </span>
                 </p>
                 <p className="text-neutral-400">
                   Licensed by{" "}
