@@ -8,19 +8,19 @@ export default function StudentGallery(): React.JSX.Element {
       {
         id: 1,
         student: "Lena Petrov",
-        image: "/artwork1.avif",
+        image: "/artwork1.webp",
         medium: "Oil & mixed media on canvas",
       },
       {
         id: 2,
         student: "James Chen",
-        image: "/artwork2.jpg",
+        image: "/artwork2.webp",
         medium: "Clay and found objects",
       },
       {
         id: 3,
         student: "Maria Gonzalez",
-        image: "/artwork3.jpg",
+        image: "/artwork3.webp",
         medium: "Charcoal and ink on paper",
       },
     ],
@@ -28,13 +28,13 @@ export default function StudentGallery(): React.JSX.Element {
       {
         id: 4,
         student: "Aisha Johnson",
-        image: "/artwork4.jpg",
+        image: "/artwork4.webp",
         medium: "Acrylic and gold leaf",
       },
       {
         id: 5,
         student: "Oliver Park",
-        image: "/artwork5.jpeg",
+        image: "/artwork5.webp",
         medium: "Bronze sculpture",
       },
       {

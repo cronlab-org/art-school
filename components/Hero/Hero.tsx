@@ -25,7 +25,7 @@ export default function Hero(): React.JSX.Element {
 
   return (
     <section className="mt-12">
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-0.5 bg-neutral-800 overflow-hidden border border-neutral-800 rounded-sm">
+      <div className="grid grid-cols-1 md:grid-cols-5 gap-0.5 bg-amber-100 overflow-hidden border border-amber-200 rounded-sm">
         <div className="md:col-span-3 relative group overflow-hidden">
           <Image
             src="/Hero.png"
@@ -43,42 +43,15 @@ export default function Hero(): React.JSX.Element {
         </div>
 
         {/* Content Column */}
-        <div className="md:col-span-2 bg-[#121212] p-6 md:p-8 flex flex-col justify-between border-t border-neutral-800 md:border-t-0">
+        <div className="md:col-span-2 bg-stone-50 p-6 md:p-8 flex flex-col justify-between border-t border-amber-200 md:border-t-0">
           {/* Main Content */}
-          {/* <div>
-            <div className="mb-4 flex items-center space-x-3">
-              <span className="text-xs tracking-widest text-neutral-400 font-mono">
-                ESTABLISHED 2003 • {yearsOfExperience} YEARS
-              </span>
-              <div className="h-px flex-1 bg-neutral-800" />
-            </div>
-
-            <h2 className="font-cormorant text-2xl md:text-3xl font-medium tracking-tight leading-tight text-neutral-100">
-              Boost Your Career With Fine Arts Diploma
-            </h2>
-
-            <p className="mt-3 text-neutral-400 text-sm leading-relaxed border-l border-neutral-700 pl-4">
-              The journey of DEBASHIS DEV ROY ART SCHOOL began in 2003, serving
-              students of all ages. We proudly complete {yearsOfExperience} years
-              of excellence in fine arts training, cultivating generations of
-              artists through our rigorous curriculum and master instructors.
-            </p>
-
-            <div className="mt-6 flex flex-wrap items-center gap-4">
-              <button className="text-xs tracking-wider border-b border-neutral-600 hover:border-neutral-100 pb-0.5 transition-colors text-neutral-300 hover:text-neutral-300">
-                VIEW COURSES
-              </button>
-              <div className="text-xs text-neutral-500 font-mono">SINCE 2003</div>
-            </div>
-          </div> */}
-
           <div className="">
-            <h1 className="font-cormorant text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold tracking-tight leading-snug sm:leading-normal md:leading-tight">
+            <h1 className="font-cormorant text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold tracking-tight leading-snug sm:leading-normal md:leading-tight text-amber-900">
               CULTIVATING EXCELLENCE <br className="hidden md:block" />
               IN FINE ARTS
             </h1>
 
-            <p className="mt-3 sm:mt-4 text-neutral-400 max-w-xl text-xs sm:text-sm md:text-base font-cormorante italic">
+            <p className="mt-3 sm:mt-4 text-stone-600 max-w-xl text-xs sm:text-sm md:text-base font-cormorante italic">
               Join Debashis Dev Roy Art School - Kolkata&apos;s leading
               institution for professional art training. Our certified online
               art courses combine traditional techniques with contemporary
@@ -86,15 +59,15 @@ export default function Hero(): React.JSX.Element {
             </p>
 
             <div className="mt-4 sm:mt-6 group flex items-center space-x-2 cursor-pointer w-fit">
-              <span className="text-xs sm:text-sm tracking-wider font-cormorant">
+              <span className="text-xs sm:text-sm tracking-wider font-cormorant text-amber-800">
                 EXPLORE PROGRAMS
               </span>
-              <div className="relative w-12 sm:w-16 h-px bg-gray-400">
+              <div className="relative w-12 sm:w-16 h-px bg-amber-600">
                 <div
                   className="absolute right-0 top-1/2 transform -translate-y-1/2 w-0 h-0 
                   border-t-2 border-t-transparent
                   border-b-2 border-b-transparent
-                  border-l-4 border-l-gray-400 group-hover:border-l-white transition-colors"
+                  border-l-4 border-l-amber-600 group-hover:border-l-amber-800 transition-colors"
                 ></div>
               </div>
             </div>
@@ -103,34 +76,34 @@ export default function Hero(): React.JSX.Element {
           {/* Admissions Office & Contact Information */}
           <div className="mt-8 space-y-6">
             {/* Admissions Office */}
-            <div className="border-l-2 border-neutral-700 pl-4">
-              <h3 className="font-cormorant text-sm font-semibold tracking-tight uppercase text-neutral-200">
+            <div className="border-l-2 border-amber-300 pl-4">
+              <h3 className="font-cormorant text-sm font-semibold tracking-tight uppercase text-amber-900">
                 Admissions Office
               </h3>
               <div className="mt-3 space-y-2">
                 <div
                   role="button"
-                  className="flex items-start text-neutral-400 hover:text-neutral-300 transition-colors cursor-pointer group"
+                  className="flex items-start text-stone-600 hover:text-amber-800 transition-colors cursor-pointer group"
                   onClick={handleAddressClick}
                 >
-                  <MapPin className="h-4 w-4 mr-3 mt-0.5 flex-shrink-0 group-hover:text-neutral-300 transition-colors" />
+                  <MapPin className="h-4 w-4 mr-3 mt-0.5 flex-shrink-0 group-hover:text-amber-800 transition-colors" />
                   <span className="text-xs lg:text-sm">{ADDRESS}</span>
                 </div>
                 <div
                   role="button"
-                  className="flex items-center text-neutral-400 hover:text-neutral-300 transition-colors cursor-pointer group"
+                  className="flex items-center text-stone-600 hover:text-amber-800 transition-colors cursor-pointer group"
                   onClick={handleCallClick}
                 >
-                  <Phone className="h-4 w-4 mr-3 group-hover:text-neutral-300 transition-colors" />
+                  <Phone className="h-4 w-4 mr-3 group-hover:text-amber-800 transition-colors" />
                   <span className="text-xs lg:text-sm">+91 98740 94338</span>
                 </div>
                 <div
                   role="button"
-                  className="flex items-center text-neutral-400 hover:text-neutral-300 transition-colors cursor-pointer group py-1"
+                  className="flex items-center text-stone-600 hover:text-amber-800 transition-colors cursor-pointer group py-1"
                   onClick={handleWhatsAppClick}
                 >
                   <svg
-                    className="h-4 w-4 mr-3 group-hover:text-neutral-300 transition-colors"
+                    className="h-4 w-4 mr-3 group-hover:text-amber-800 transition-colors"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -142,23 +115,22 @@ export default function Hero(): React.JSX.Element {
             </div>
 
             {/* Affiliations */}
-            <div className="bg-[#1a1a1a] p-4 rounded-sm flex items-center space-x-4">
-              <div className="w-10 h-10 border border-neutral-700 rounded-full flex items-center justify-center flex-shrink-0 bg-white">
+            <div className="bg-amber-50 border border-amber-200 p-4 rounded-sm flex items-center space-x-4">
+              <div className="w-10 h-10 border border-amber-300 rounded-full flex items-center justify-center flex-shrink-0 bg-white">
                 <Image src={mandriLogo} alt="bharatiya charukala mandir" />
               </div>
-              {/* <div className="w-11 h-11 mb-2 rounded-full flex items-center justify-center flex-shrink-0">
-                <Image src={wb_logo} alt="bharatiya charukala mandir" />
-              </div> */}
               <div className="text-xs lg:text-sm space-y-1">
-                <p className="text-neutral-400">
+                <p className="text-stone-600">
                   Affiliated to{" "}
-                  <span className="text-neutral-300">
+                  <span className="text-amber-800 font-medium">
                     Bharatiya Charukala Mandir
                   </span>
                 </p>
-                <p className="text-neutral-400">
+                <p className="text-stone-600">
                   Licensed by{" "}
-                  <span className="text-neutral-300">Govt. of West Bengal</span>
+                  <span className="text-amber-800 font-medium">
+                    Govt. of West Bengal
+                  </span>
                 </p>
               </div>
             </div>
