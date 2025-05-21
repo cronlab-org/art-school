@@ -13,27 +13,27 @@ import {
 
 export default function Curriculum(): React.JSX.Element {
   return (
-    <section className="py-12 sm:py-16 md:py-20  sm:px-6 lg:px-8">
+    <section className="py-12 sm:py-16 md:py-20 sm:px-6 lg:px-8 bg-amber-50">
       <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
-        <div className="border-b-2 border-neutral-800 pb-4 mb-8 relative">
-          <h2 className="font-cormorant text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-300 tracking-tight">
+        <div className="border-b-2 border-amber-200 pb-4 mb-8 relative">
+          <h2 className="font-cormorant text-3xl sm:text-4xl md:text-5xl font-bold text-amber-900 tracking-tight">
             Art Curriculum
           </h2>
-          <p className="font-cormorant text-xs text-neutral-400 mt-2 tracking-widest">
+          <p className="font-cormorant text-xs text-amber-700 mt-2 tracking-widest">
             STRUCTURED LEARNING PATH • TRADITIONAL TO CONTEMPORARY • SINCE 2003
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2 space-y-8">
-            <div className="bg-[#1a1a1a] backdrop-blur-3xl p-6 sm:p-8  border-neutral-500 shadow-lg">
+            <div className="bg-amber-100 backdrop-blur-3xl p-6 sm:p-8 border border-amber-200 shadow-lg rounded-lg">
               <div className="flex items-center mb-6">
-                <GraduationCap className="h-6 w-6 text-neutral-300 mr-3" />
-                <h3 className="font-cormorant text-xl sm:text-2xl font-bold text-neutral-300">
+                <GraduationCap className="h-6 w-6 text-amber-700 mr-3" />
+                <h3 className="font-cormorant text-xl sm:text-2xl font-bold text-amber-900">
                   Fine Arts Diploma Courses
                 </h3>
               </div>
-              <p className="text-neutral-300 mb-6 text-sm sm:text-base">
+              <p className="text-amber-800 mb-6 text-sm sm:text-base">
                 Our structured diploma program is designed to guide you from the
                 basics to mastery, culminating in a Diploma Certificate and Mark
                 Sheet from our Govt. of West Bengal licensed institute.
@@ -48,15 +48,15 @@ export default function Curriculum(): React.JSX.Element {
                 ].map((level, index) => (
                   <div
                     key={index}
-                    className="border border-neutral-700 p-4 hover:border-neutral-400 transition-colors"
+                    className="border border-amber-200 bg-white p-4 hover:border-amber-400 transition-colors rounded-lg"
                   >
                     <div className="flex items-center">
-                      <div className="h-2 w-2 bg-gray-400 mr-3"></div>
-                      <h4 className="font-cormorant text-sm sm:text-base font-medium text-neutral-300">
+                      <div className="h-2 w-2 bg-amber-500 mr-3"></div>
+                      <h4 className="font-cormorant text-sm sm:text-base font-medium text-amber-900">
                         {level}
                       </h4>
                     </div>
-                    <p className="text-neutral-400 text-xs mt-2">
+                    <p className="text-amber-700 text-xs mt-2">
                       {index === 0 && "Foundational techniques & principles"}
                       {index === 1 && "Developing skills & personal style"}
                       {index === 2 && "Mastering complex compositions"}
@@ -67,14 +67,14 @@ export default function Curriculum(): React.JSX.Element {
               </div>
             </div>
 
-            <div className="bg-[#1a1a1a] p-6 sm:p-8   border-neutral-500 shadow-lg">
+            <div className="bg-amber-100 p-6 sm:p-8 border border-amber-200 shadow-lg rounded-lg">
               <div className="flex items-center mb-6">
-                <Users className="h-6 w-6 text-neutral-300 mr-3" />
-                <h3 className="font-cormorant text-xl sm:text-2xl font-bold text-neutral-300">
+                <Users className="h-6 w-6 text-amber-700 mr-3" />
+                <h3 className="font-cormorant text-xl sm:text-2xl font-bold text-amber-900">
                   Art for Everyone
                 </h3>
               </div>
-              <p className="text-neutral-300 mb-6 text-sm sm:text-base italic">
+              <p className="text-amber-800 mb-6 text-sm sm:text-base italic">
                 &quot;The Artistic Eye&quot; — learning to see and express
                 everyday life in a unique, imaginative way.
               </p>
@@ -96,30 +96,30 @@ export default function Curriculum(): React.JSX.Element {
                 ].map((item, index) => (
                   <div
                     key={index}
-                    className="bg-neutral-900 p-4 border border-neutral-700"
+                    className="bg-white p-4 border border-amber-200 rounded-lg"
                   >
-                    <h4 className="font-cormorant text-sm font-bold text-neutral-200 mb-2">
+                    <h4 className="font-cormorant text-sm font-bold text-amber-900 mb-2">
                       {item.title}
                     </h4>
-                    <p className="text-neutral-400 text-xs">{item.desc}</p>
+                    <p className="text-amber-700 text-xs">{item.desc}</p>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="bg-[#1a1a1a] p-6 sm:p-8   border-neutral-500 shadow-lg">
+            <div className="bg-amber-100 p-6 sm:p-8 border border-amber-200 shadow-lg rounded-lg">
               <div className="flex items-center mb-6">
-                <Palette className="h-6 w-6 text-neutral-300 mr-3" />
-                <h3 className="font-cormorant text-xl sm:text-2xl font-bold text-neutral-300">
+                <Palette className="h-6 w-6 text-amber-700 mr-3" />
+                <h3 className="font-cormorant text-xl sm:text-2xl font-bold text-amber-900">
                   Specialized Courses & Techniques
                 </h3>
               </div>
 
               <div className="space-y-8">
                 <div>
-                  <h4 className="font-cormorant text-base sm:text-lg font-bold text-neutral-300 mb-4 flex items-center">
-                    <Ruler className="h-5 w-5 text-amber-400 mr-3" />
-                    <span className="bg-white bg-clip-text text-transparent font-cormorant">
+                  <h4 className="font-cormorant text-base sm:text-lg font-bold text-amber-900 mb-4 flex items-center">
+                    <Ruler className="h-5 w-5 text-amber-600 mr-3" />
+                    <span className="font-cormorant text-amber-900">
                       Advanced Drawing Techniques
                     </span>
                   </h4>
@@ -137,24 +137,24 @@ export default function Curriculum(): React.JSX.Element {
                     ].map((item, index) => (
                       <div
                         key={index}
-                        className="relative group overflow-hidden rounded-lg bg-gradient-to-br from-neutral-800 to-neutral-900 p-px w-fit"
+                        className="relative group overflow-hidden rounded-lg bg-gradient-to-br from-amber-200 to-amber-100 p-px w-fit"
                       >
-                        <div className="relative z-10 flex items-center p-3 h-full bg-neutral-900 rounded-[7px] group-hover:bg-neutral-800 transition-all duration-300">
-                          <div className="w-1.5 h-1.5 rounded-full bg-amber-400 mr-3 flex-shrink-0"></div>
-                          <span className="text-xs sm:text-sm font-medium text-neutral-200 group-hover:text-neutral-300">
+                        <div className="relative z-10 flex items-center p-3 h-full bg-white rounded-[7px] group-hover:bg-amber-50 transition-all duration-300">
+                          <div className="w-1.5 h-1.5 rounded-full bg-amber-600 mr-3 flex-shrink-0"></div>
+                          <span className="text-xs sm:text-sm font-medium text-amber-900 group-hover:text-amber-800">
                             {item}
                           </span>
                         </div>
-                        <div className="absolute inset-0 bg-gradient-to-br from-amber-500/20 to-amber-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div className="absolute inset-0 bg-gradient-to-br from-amber-400/20 to-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       </div>
                     ))}
                   </div>
                 </div>
 
                 <div>
-                  <h4 className="font-cormorant text-base sm:text-lg font-bold text-neutral-300 mb-4 flex items-center">
-                    <Droplets className="h-5 w-5 text-blue-300 mr-3" />
-                    <span className="bg-white bg-clip-text text-transparent font-cormorant">
+                  <h4 className="font-cormorant text-base sm:text-lg font-bold text-amber-900 mb-4 flex items-center">
+                    <Droplets className="h-5 w-5 text-amber-500 mr-3" />
+                    <span className="font-cormorant text-amber-900">
                       Watercolor Techniques
                     </span>
                   </h4>
@@ -172,24 +172,24 @@ export default function Curriculum(): React.JSX.Element {
                     ].map((item, index) => (
                       <div
                         key={index}
-                        className="relative group overflow-hidden rounded-lg bg-gradient-to-br from-neutral-800 to-neutral-900 p-px"
+                        className="relative group overflow-hidden rounded-lg bg-gradient-to-br from-amber-200 to-amber-100 p-px"
                       >
-                        <div className="relative z-10 flex items-center p-3 h-full bg-neutral-900 rounded-[7px] group-hover:bg-neutral-800 transition-all duration-300">
-                          <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mr-3 flex-shrink-0"></div>
-                          <span className="text-xs sm:text-sm font-medium text-neutral-200 group-hover:text-neutral-300">
+                        <div className="relative z-10 flex items-center p-3 h-full bg-white rounded-[7px] group-hover:bg-amber-50 transition-all duration-300">
+                          <div className="w-1.5 h-1.5 rounded-full bg-amber-500 mr-3 flex-shrink-0"></div>
+                          <span className="text-xs sm:text-sm font-medium text-amber-900 group-hover:text-amber-800">
                             {item}
                           </span>
                         </div>
-                        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-blue-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div className="absolute inset-0 bg-gradient-to-br from-amber-400/20 to-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       </div>
                     ))}
                   </div>
                 </div>
 
                 <div>
-                  <h4 className="font-cormorant text-base sm:text-lg font-bold text-neutral-300 mb-4 flex items-center">
-                    <Paintbrush className="h-5 w-5 text-purple-300 mr-3" />
-                    <span className="bg-white bg-clip-text text-transparent font-cormorant">
+                  <h4 className="font-cormorant text-base sm:text-lg font-bold text-amber-900 mb-4 flex items-center">
+                    <Paintbrush className="h-5 w-5 text-amber-600 mr-3" />
+                    <span className="font-cormorant text-amber-900">
                       Acrylic Techniques
                     </span>
                   </h4>
@@ -207,28 +207,28 @@ export default function Curriculum(): React.JSX.Element {
                     ].map((item, index) => (
                       <div
                         key={index}
-                        className="relative group overflow-hidden rounded-lg bg-gradient-to-br from-neutral-800 to-neutral-900 p-px"
+                        className="relative group overflow-hidden rounded-lg bg-gradient-to-br from-amber-200 to-amber-100 p-px"
                       >
-                        <div className="relative z-10 flex items-center p-3 h-full bg-neutral-900 rounded-[7px] group-hover:bg-neutral-800 transition-all duration-300">
-                          <div className="w-1.5 h-1.5 rounded-full bg-purple-400 mr-3 flex-shrink-0"></div>
-                          <span className="text-xs sm:text-sm font-medium text-neutral-200 group-hover:text-neutral-300">
+                        <div className="relative z-10 flex items-center p-3 h-full bg-white rounded-[7px] group-hover:bg-amber-50 transition-all duration-300">
+                          <div className="w-1.5 h-1.5 rounded-full bg-amber-600 mr-3 flex-shrink-0"></div>
+                          <span className="text-xs sm:text-sm font-medium text-amber-900 group-hover:text-amber-800">
                             {item}
                           </span>
                         </div>
-                        <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-purple-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div className="absolute inset-0 bg-gradient-to-br from-amber-400/20 to-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       </div>
                     ))}
                   </div>
                 </div>
 
                 <div>
-                  <h4 className="font-cormorant text-base sm:text-lg font-bold text-neutral-300 mb-4 flex items-center">
-                    <Palette className="h-5 w-5 text-emerald-300 mr-3" />
-                    <span className="bg-white bg-clip-text text-transparent font-cormorant">
+                  <h4 className="font-cormorant text-base sm:text-lg font-bold text-amber-900 mb-4 flex items-center">
+                    <Palette className="h-5 w-5 text-amber-700 mr-3" />
+                    <span className="font-cormorant text-amber-900">
                       Oil Painting
                     </span>
                   </h4>
-                  <p className="text-neutral-300 text-sm mb-4 leading-relaxed">
+                  <p className="text-amber-800 text-sm mb-4 leading-relaxed">
                     Master the advantages of oil painting: greater flexibility,
                     richer colors, and a wider tonal range from light to dark,
                     with crisp effects and linear treatment.
@@ -244,24 +244,24 @@ export default function Curriculum(): React.JSX.Element {
                     ].map((item, index) => (
                       <div
                         key={index}
-                        className="relative group overflow-hidden rounded-lg bg-gradient-to-br from-neutral-800 to-neutral-900 p-px"
+                        className="relative group overflow-hidden rounded-lg bg-gradient-to-br from-amber-200 to-amber-100 p-px"
                       >
-                        <div className="relative z-10 flex items-center p-3 h-full bg-neutral-900 rounded-[7px] group-hover:bg-neutral-800 transition-all duration-300">
-                          <div className="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-3 flex-shrink-0"></div>
-                          <span className="text-xs sm:text-sm font-medium text-neutral-200 group-hover:text-neutral-300">
+                        <div className="relative z-10 flex items-center p-3 h-full bg-white rounded-[7px] group-hover:bg-amber-50 transition-all duration-300">
+                          <div className="w-1.5 h-1.5 rounded-full bg-amber-700 mr-3 flex-shrink-0"></div>
+                          <span className="text-xs sm:text-sm font-medium text-amber-900 group-hover:text-amber-800">
                             {item}
                           </span>
                         </div>
-                        <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/20 to-emerald-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div className="absolute inset-0 bg-gradient-to-br from-amber-400/20 to-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       </div>
                     ))}
                   </div>
                 </div>
 
                 <div>
-                  <h4 className="font-cormorant text-base sm:text-lg font-bold text-neutral-300 mb-4 flex items-center">
-                    <Globe className="h-5 w-5 text-rose-300 mr-3" />
-                    <span className="bg-white bg-clip-text text-transparent font-cormorant">
+                  <h4 className="font-cormorant text-base sm:text-lg font-bold text-amber-900 mb-4 flex items-center">
+                    <Globe className="h-5 w-5 text-amber-600 mr-3" />
+                    <span className="font-cormorant text-amber-900">
                       Folk & Cultural Art
                     </span>
                   </h4>
@@ -275,14 +275,14 @@ export default function Curriculum(): React.JSX.Element {
                     ].map((style, index) => (
                       <div
                         key={index}
-                        className="relative group overflow-hidden rounded-full bg-gradient-to-br from-neutral-800 to-neutral-900 p-px"
+                        className="relative group overflow-hidden rounded-full bg-gradient-to-br from-amber-200 to-amber-100 p-px"
                       >
-                        <div className="relative z-10 flex items-center px-4 py-2 bg-neutral-900 rounded-full group-hover:bg-neutral-800 transition-all duration-300">
-                          <span className="text-xs sm:text-sm font-medium text-neutral-200 group-hover:text-neutral-300">
+                        <div className="relative z-10 flex items-center px-4 py-2 bg-white rounded-full group-hover:bg-amber-50 transition-all duration-300">
+                          <span className="text-xs sm:text-sm font-medium text-amber-900 group-hover:text-amber-800">
                             {style}
                           </span>
                         </div>
-                        <div className="absolute inset-0 bg-gradient-to-br from-rose-500/20 to-rose-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div className="absolute inset-0 bg-gradient-to-br from-amber-400/20 to-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       </div>
                     ))}
                   </div>
@@ -292,10 +292,10 @@ export default function Curriculum(): React.JSX.Element {
           </div>
 
           <div className="space-y-8">
-            <div className="bg-[#1a1a1a] p-6 sm:p-8   border-neutral-500 shadow-lg">
+            <div className="bg-amber-100 p-6 sm:p-8 border border-amber-200 shadow-lg rounded-lg">
               <div className="flex items-center mb-6">
                 <svg
-                  className="h-6 w-6 text-neutral-300 mr-3"
+                  className="h-6 w-6 text-amber-700 mr-3"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -307,11 +307,11 @@ export default function Curriculum(): React.JSX.Element {
                     d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
-                <h3 className="font-cormorant text-xl sm:text-2xl font-bold text-neutral-300">
+                <h3 className="font-cormorant text-xl sm:text-2xl font-bold text-amber-900">
                   Corporate & Professional Programs
                 </h3>
               </div>
-              <p className="text-neutral-300 mb-6 text-sm sm:text-base">
+              <p className="text-amber-800 mb-6 text-sm sm:text-base">
                 Intensive courses for working professionals across creative
                 fields:
               </p>
@@ -327,33 +327,33 @@ export default function Curriculum(): React.JSX.Element {
                   "Mehndi & Tattoo Art",
                 ].map((item, index) => (
                   <div key={index} className="flex items-start">
-                    <div className="h-1.5 w-1.5 bg-gray-400 mt-2 mr-3 flex-shrink-0"></div>
-                    <p className="text-neutral-300 text-sm">{item}</p>
+                    <div className="h-1.5 w-1.5 bg-amber-500 mt-2 mr-3 flex-shrink-0"></div>
+                    <p className="text-amber-800 text-sm">{item}</p>
                   </div>
                 ))}
               </div>
             </div>
-            <div className="bg-[#1a1a1a] p-6 sm:p-8   border-neutral-500 shadow-lg">
+            <div className="bg-amber-100 p-6 sm:p-8 border border-amber-200 shadow-lg rounded-lg">
               <div className="flex items-center mb-6">
-                <Laptop className="h-6 w-6 text-neutral-300 mr-3" />
-                <h3 className="font-cormorant text-xl sm:text-2xl font-bold text-neutral-300">
+                <Laptop className="h-6 w-6 text-amber-700 mr-3" />
+                <h3 className="font-cormorant text-xl sm:text-2xl font-bold text-amber-900">
                   Interactive Online Classes
                 </h3>
               </div>
-              <p className="text-neutral-300 mb-4 text-sm sm:text-base">
+              <p className="text-amber-800 mb-4 text-sm sm:text-base">
                 Our Multimedia-Based Interactive Online Classrooms connect
                 students globally via Google Meet.
               </p>
 
-              <div className="bg-neutral-900 p-4 border border-neutral-700 mb-4">
-                <h4 className="font-cormorant text-sm font-bold text-neutral-200 mb-2">
+              <div className="bg-white p-4 border border-amber-200 mb-4 rounded-lg">
+                <h4 className="font-cormorant text-sm font-bold text-amber-900 mb-2">
                   Students:
                 </h4>
                 <div className="flex flex-wrap gap-2">
                   {["National", "International"].map((type, index) => (
                     <span
                       key={index}
-                      className="text-xs text-neutral-300 bg-neutral-800 px-2 py-1 rounded border border-neutral-700"
+                      className="text-xs text-amber-800 bg-amber-50 px-2 py-1 rounded border border-amber-200"
                     >
                       {type}
                     </span>
@@ -361,46 +361,43 @@ export default function Curriculum(): React.JSX.Element {
                 </div>
               </div>
 
-              <div className="bg-neutral-900 border border-neutral-700 p-4">
-                <h4 className="font-cormorant text-xs font-bold text-neutral-300 mb-1">
+              <div className="bg-white border border-amber-200 p-4 rounded-lg">
+                <h4 className="font-cormorant text-xs font-bold text-amber-800 mb-1">
                   NOTE
                 </h4>
-                <p className="text-neutral-400 text-xs">
+                <p className="text-amber-700 text-xs">
                   We do not offer demo classes. All admissions and monthly fees
                   are non-refundable.
                 </p>
               </div>
             </div>
-            <div className="bg-[#1a1a1a] p-6 sm:p-8 border border-neutral-700 shadow-lg relative">
-              {/* <div className="absolute top-4 left-4 text-5xl text-neutral-700 font-cormorant">
-                &quot;
-              </div> */}
-              <p className="text-neutral-300 italic text-sm sm:text-base relative z-10">
+            <div className="bg-amber-100 p-6 sm:p-8 border border-amber-200 shadow-lg rounded-lg relative">
+              <p className="text-amber-800 italic text-sm sm:text-base relative z-10">
                 Your potential can grow only when you can think and grow through
                 your imaginations.
               </p>
 
-              <p className="text-neutral-300 text-right text-sm mt-4 font-cormorant">
+              <p className="text-amber-800 text-right text-sm mt-4 font-cormorant">
                 — Artist Debashis Dev Roy
               </p>
             </div>
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-neutral-700 flex flex-col sm:flex-row justify-between items-center">
+        <div className="mt-12 pt-8 border-t border-amber-200 flex flex-col sm:flex-row justify-between items-center">
           <div className="flex items-center space-x-4 mb-4 sm:mb-0">
-            <div className="bg-neutral-800 p-2 px-3 rounded border border-neutral-700">
-              <span className="text-xs text-neutral-300 font-bold">
+            <div className="bg-white p-2 px-3 rounded border border-amber-200">
+              <span className="text-xs text-amber-800 font-bold">
                 ISO 9001:2015
               </span>
             </div>
-            <div className="bg-neutral-800 p-2 px-3 rounded border border-neutral-700">
-              <span className="text-xs text-neutral-300 font-bold">
+            <div className="bg-white p-2 px-3 rounded border border-amber-200">
+              <span className="text-xs text-amber-800 font-bold">
                 GOVT. OF WB LICENSED
               </span>
             </div>
           </div>
-          <p className="text-neutral-400 text-xs sm:text-sm text-center sm:text-right">
+          <p className="text-amber-700 text-xs sm:text-sm text-center sm:text-right">
             Affiliated with Bharatiya Charukala Mandir • Classes available 7
             days a week
           </p>
