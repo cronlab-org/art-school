@@ -13,9 +13,9 @@ import {
 
 export default function Curriculum(): React.JSX.Element {
   return (
-    <section className="py-12 sm:py-16 md:py-20 sm:px-6 lg:px-8 bg-amber-50">
+    <section className="py-12 sm:py-16 md:py-20 sm:px-6 lg:px-8 bg-amber-50 mb-20">
       <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
-        <div className="border-b-2 border-amber-200 pb-4 mb-8 relative">
+        <div className="border-b-2 border-amber-200 pb-4 mb-8 relative p-4">
           <h2 className="font-cormorant text-3xl sm:text-4xl md:text-5xl font-bold text-amber-900 tracking-tight">
             Art Curriculum
           </h2>
@@ -25,7 +25,7 @@ export default function Curriculum(): React.JSX.Element {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <div className="lg:col-span-2 space-y-8">
+          <div className="lg:col-span-2 space-y-8 p-4">
             <div className="bg-amber-100 backdrop-blur-3xl p-6 sm:p-8 border border-amber-200 shadow-lg rounded-lg">
               <div className="flex items-center mb-6">
                 <GraduationCap className="h-6 w-6 text-amber-700 mr-3" />
@@ -291,7 +291,7 @@ export default function Curriculum(): React.JSX.Element {
             </div>
           </div>
 
-          <div className="space-y-8">
+          <div className="space-y-8 p-4">
             <div className="bg-amber-100 p-6 sm:p-8 border border-amber-200 shadow-lg rounded-lg">
               <div className="flex items-center mb-6">
                 <svg
@@ -386,18 +386,18 @@ export default function Curriculum(): React.JSX.Element {
 
         <div className="mt-12 pt-8 border-t border-amber-200 flex flex-col sm:flex-row justify-between items-center">
           <div className="flex items-center space-x-4 mb-4 sm:mb-0">
-            <div className="bg-white p-2 px-3 rounded border border-amber-200">
+            <div className="bg-amber-100 p-2 px-3 rounded border border-amber-300">
               <span className="text-xs text-amber-800 font-bold">
                 ISO 9001:2015
               </span>
             </div>
-            <div className="bg-white p-2 px-3 rounded border border-amber-200">
+            <div className="bg-amber-100 p-2 px-3 rounded border border-amber-300">
               <span className="text-xs text-amber-800 font-bold">
                 GOVT. OF WB LICENSED
               </span>
             </div>
           </div>
-          <p className="text-amber-700 text-xs sm:text-sm text-center sm:text-right">
+          <p className="text-amber-700 text-xs sm:text-sm text-center sm:text-right px-4 sm:">
             Affiliated with Bharatiya Charukala Mandir • Classes available 7
             days a week
           </p>

@@ -155,7 +155,7 @@ export default function TeacherGallery(): React.JSX.Element {
         <div className="mt-16 text-center">
           <button
             onClick={toggleArtworks}
-            className="inline-flex items-center space-x-2 border border-amber-300 bg-white px-8 py-3 hover:bg-amber-100 hover:border-amber-500 transition-all duration-300 group rounded-sm"
+            className="inline-flex items-center space-x-2 border border-amber-300 bg-amber-200 px-8 py-3 hover:bg-amber-100 hover:border-amber-500 transition-all duration-300 group rounded-sm"
           >
             <span className="text-sm tracking-wide text-amber-800 group-hover:text-amber-700 transition-colors duration-300">
               {showMore ? "SHOW LESS" : "EXPLORE MORE"}
