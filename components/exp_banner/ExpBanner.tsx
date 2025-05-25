@@ -20,8 +20,8 @@ export default function ExpBanner(): React.JSX.Element {
 
   const yearsOfExperience = calculateExperience();
   return (
-    <div className="mt-8 sm:mt-12 pt-6 sm:pt-8">
-      <div className="relative bg-stone-50 border border-amber-200 p-4 sm:p-6 md:p-8 shadow-xl max-w-7xl mx-auto">
+    <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 mb-20 sm:mb-12">
+      <div className="relative bg-amber-50 border border-amber-200 p-4 sm:p-6 md:p-8 shadow-xl max-w-7xl mx-auto">
         <div className="absolute top-0 left-0 right-0 h-1 bg-amber-300"></div>
         <div className="absolute bottom-0 left-0 right-0 h-1 bg-amber-300"></div>
 

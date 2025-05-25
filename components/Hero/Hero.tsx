@@ -43,7 +43,7 @@ export default function Hero(): React.JSX.Element {
         </div>
 
         {/* Content Column */}
-        <div className="md:col-span-2 bg-stone-50 p-6 md:p-8 flex flex-col justify-between border-t border-amber-200 md:border-t-0">
+        <div className="md:col-span-2 bg-amber-50 p-6 md:p-8 flex flex-col justify-between border-t border-amber-200 md:border-t-0">
           {/* Main Content */}
           <div className="">
             <h1 className="font-cormorant text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold tracking-tight leading-snug sm:leading-normal md:leading-tight text-amber-900">
@@ -115,7 +115,7 @@ export default function Hero(): React.JSX.Element {
             </div>
 
             {/* Affiliations */}
-            <div className="bg-amber-50 border border-amber-200 p-4 rounded-sm flex items-center space-x-4">
+            <div className="bg-amber-100 border border-amber-200 p-4 rounded-sm flex items-center space-x-4">
               <div className="w-10 h-10 border border-amber-300 rounded-full flex items-center justify-center flex-shrink-0 bg-white">
                 <Image src={mandriLogo} alt="bharatiya charukala mandir" />
               </div>
