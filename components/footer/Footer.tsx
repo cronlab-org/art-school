@@ -7,7 +7,7 @@ export default function Footer(): React.JSX.Element {
     <footer className="bg-amber-50 text-amber-900 mt-16 py-8 border-t border-amber-200">
       <div className="max-w-[1550px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div className="space-y-6">
+          <div className="space-y-6 flex flex-col items-center text-center lg:items-start lg:text-left">
             <div>
               <h3 className="text-xl font-bold text-amber-900 mb-4 font-cormorant">
                 DEBASHIS DEV ROY ART SCHOOL
@@ -39,7 +39,7 @@ export default function Footer(): React.JSX.Element {
                 </div>
               </div>
 
-              <div>
+              <div className="flex flex-col items-center justify-center sm:justify-start sm:items-start">
                 <h4 className="text-amber-900 font-medium mb-2">Follow Us</h4>
                 <div className="flex space-x-4">
                   <Link
