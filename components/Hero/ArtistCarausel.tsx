@@ -70,7 +70,7 @@ export default function MomentsCarousel(): React.JSX.Element {
   ];
 
   return (
-    <section className="w-full py-12 md:py-20 lg:py-24 bg-amber-50">
+    <section className="w-full py-12 md:py-20 lg:py-24 bg-amber-50 mt-10">
       <div className="relative max-w-screen-2xl mx-auto px-4 sm:px-6">
         {/* Minimalist header */}
         <div className="text-center mb-8 md:mb-16 lg:mb-20">
