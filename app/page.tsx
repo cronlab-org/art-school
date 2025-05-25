@@ -6,6 +6,7 @@ import TeacherGallery from "@/components/gallery/TeacherGallery";
 import Header from "@/components/header/Header";
 import ArtistCarousel from "@/components/Hero/ArtistCarausel";
 import Hero from "@/components/Hero/Hero";
+import MobileNavBar from "@/components/MobileNavbar";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <TeacherGallery />
         <StudentGallery />
         <ArtistCarousel />
+        <MobileNavBar />
       </main>
       <Footer />
     </div>
