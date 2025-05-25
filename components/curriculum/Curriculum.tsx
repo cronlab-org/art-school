@@ -26,7 +26,7 @@ export default function Curriculum(): React.JSX.Element {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2 space-y-8">
-            <div className="bg-neutral-800/50 backdrop-blur-3xl p-6 sm:p-8  border-gray-500 shadow-lg">
+            <div className="bg-[#1a1a1a] backdrop-blur-3xl p-6 sm:p-8  border-neutral-500 shadow-lg">
               <div className="flex items-center mb-6">
                 <GraduationCap className="h-6 w-6 text-neutral-300 mr-3" />
                 <h3 className="font-cormorant text-xl sm:text-2xl font-bold text-neutral-300">
@@ -48,7 +48,7 @@ export default function Curriculum(): React.JSX.Element {
                 ].map((level, index) => (
                   <div
                     key={index}
-                    className="border border-gray-700 p-4 hover:border-gray-400 transition-colors"
+                    className="border border-neutral-700 p-4 hover:border-neutral-400 transition-colors"
                   >
                     <div className="flex items-center">
                       <div className="h-2 w-2 bg-gray-400 mr-3"></div>
@@ -67,7 +67,7 @@ export default function Curriculum(): React.JSX.Element {
               </div>
             </div>
 
-            <div className="bg-neutral-800/50 p-6 sm:p-8   border-gray-500 shadow-lg">
+            <div className="bg-[#1a1a1a] p-6 sm:p-8   border-neutral-500 shadow-lg">
               <div className="flex items-center mb-6">
                 <Users className="h-6 w-6 text-neutral-300 mr-3" />
                 <h3 className="font-cormorant text-xl sm:text-2xl font-bold text-neutral-300">
@@ -96,7 +96,7 @@ export default function Curriculum(): React.JSX.Element {
                 ].map((item, index) => (
                   <div
                     key={index}
-                    className="bg-neutral-900 p-4 border border-gray-700"
+                    className="bg-neutral-900 p-4 border border-neutral-700"
                   >
                     <h4 className="font-cormorant text-sm font-bold text-neutral-200 mb-2">
                       {item.title}
@@ -107,7 +107,7 @@ export default function Curriculum(): React.JSX.Element {
               </div>
             </div>
 
-            <div className="bg-neutral-800/50 p-6 sm:p-8   border-gray-500 shadow-lg">
+            <div className="bg-[#1a1a1a] p-6 sm:p-8   border-neutral-500 shadow-lg">
               <div className="flex items-center mb-6">
                 <Palette className="h-6 w-6 text-neutral-300 mr-3" />
                 <h3 className="font-cormorant text-xl sm:text-2xl font-bold text-neutral-300">
@@ -292,7 +292,7 @@ export default function Curriculum(): React.JSX.Element {
           </div>
 
           <div className="space-y-8">
-            <div className="bg-neutral-800/50 p-6 sm:p-8   border-gray-500 shadow-lg">
+            <div className="bg-[#1a1a1a] p-6 sm:p-8   border-neutral-500 shadow-lg">
               <div className="flex items-center mb-6">
                 <svg
                   className="h-6 w-6 text-neutral-300 mr-3"
@@ -333,7 +333,7 @@ export default function Curriculum(): React.JSX.Element {
                 ))}
               </div>
             </div>
-            <div className="bg-neutral-800/50 p-6 sm:p-8   border-gray-500 shadow-lg">
+            <div className="bg-[#1a1a1a] p-6 sm:p-8   border-neutral-500 shadow-lg">
               <div className="flex items-center mb-6">
                 <Laptop className="h-6 w-6 text-neutral-300 mr-3" />
                 <h3 className="font-cormorant text-xl sm:text-2xl font-bold text-neutral-300">
@@ -345,7 +345,7 @@ export default function Curriculum(): React.JSX.Element {
                 students globally via Google Meet.
               </p>
 
-              <div className="bg-neutral-900 p-4 border border-gray-700 mb-4">
+              <div className="bg-neutral-900 p-4 border border-neutral-700 mb-4">
                 <h4 className="font-cormorant text-sm font-bold text-neutral-200 mb-2">
                   Students:
                 </h4>
@@ -353,7 +353,7 @@ export default function Curriculum(): React.JSX.Element {
                   {["National", "International"].map((type, index) => (
                     <span
                       key={index}
-                      className="text-xs text-neutral-300 bg-neutral-800 px-2 py-1 rounded border border-gray-700"
+                      className="text-xs text-neutral-300 bg-neutral-800 px-2 py-1 rounded border border-neutral-700"
                     >
                       {type}
                     </span>
@@ -361,7 +361,7 @@ export default function Curriculum(): React.JSX.Element {
                 </div>
               </div>
 
-              <div className="bg-neutral-900 border border-gray-700 p-4">
+              <div className="bg-neutral-900 border border-neutral-700 p-4">
                 <h4 className="font-cormorant text-xs font-bold text-neutral-300 mb-1">
                   NOTE
                 </h4>
@@ -371,13 +371,13 @@ export default function Curriculum(): React.JSX.Element {
                 </p>
               </div>
             </div>
-            <div className="bg-neutral-800/50 p-6 sm:p-8 border border-gray-700 shadow-lg relative">
+            <div className="bg-[#1a1a1a] p-6 sm:p-8 border border-neutral-700 shadow-lg relative">
               {/* <div className="absolute top-4 left-4 text-5xl text-neutral-700 font-cormorant">
                 &quot;
               </div> */}
               <p className="text-neutral-300 italic text-sm sm:text-base relative z-10">
-                Your potential can grow only when you can think and grow
-                through your imaginations. 
+                Your potential can grow only when you can think and grow through
+                your imaginations.
               </p>
 
               <p className="text-neutral-300 text-right text-sm mt-4 font-cormorant">
@@ -387,14 +387,14 @@ export default function Curriculum(): React.JSX.Element {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-gray-700 flex flex-col sm:flex-row justify-between items-center">
+        <div className="mt-12 pt-8 border-t border-neutral-700 flex flex-col sm:flex-row justify-between items-center">
           <div className="flex items-center space-x-4 mb-4 sm:mb-0">
-            <div className="bg-neutral-800 p-2 px-3 rounded border border-gray-700">
+            <div className="bg-neutral-800 p-2 px-3 rounded border border-neutral-700">
               <span className="text-xs text-neutral-300 font-bold">
                 ISO 9001:2015
               </span>
             </div>
-            <div className="bg-neutral-800 p-2 px-3 rounded border border-gray-700">
+            <div className="bg-neutral-800 p-2 px-3 rounded border border-neutral-700">
               <span className="text-xs text-neutral-300 font-bold">
                 GOVT. OF WB LICENSED
               </span>
