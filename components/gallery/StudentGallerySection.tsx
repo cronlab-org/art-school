@@ -77,18 +77,18 @@ export default function StudentGallery(): React.JSX.Element {
   };
 
   return (
-    <section className="py-16 mt-8 bg-black">
+    <section className="py-16 mt-8 bg-amber-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16">
           <div className="mb-6 md:mb-0">
-            <h2 className="font-cormorant text-3xl md:text-4xl lg:text-5xl font-light text-neutral-300 mb-3 tracking-tight">
+            <h2 className="font-cormorant text-3xl md:text-4xl lg:text-5xl font-light text-amber-900 mb-3 tracking-tight">
               Student Gallery
             </h2>
-            <p className="text-neutral-500 text-sm md:text-base max-w-md">
+            <p className="text-amber-700 text-sm md:text-base max-w-md">
               Celebrating creative excellence from the artist himself
             </p>
           </div>
-          <button className="text-xs md:text-sm text-neutral-400 hover:text-neutral-300 border-b border-transparent hover:border-neutral-400 pb-1 transition-colors duration-200 w-fit">
+          <button className="text-xs md:text-sm text-amber-600 hover:text-amber-800 border-b border-transparent hover:border-amber-600 pb-1 transition-colors duration-200 w-fit">
             VIEW ALL WORKS →
           </button>
         </div>
@@ -96,10 +96,9 @@ export default function StudentGallery(): React.JSX.Element {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
           {displayedArtworks.map((artwork) => (
             <div key={artwork.id} className="group">
-              <div className="relative aspect-[4/5] w-full overflow-hidden bg-neutral-900 p-4 border border-neutral-800 hover:border-neutral-600 transition-all duration-300 shadow-xl">
-                <div className="absolute inset-3 border border-neutral-800/50 rounded-sm pointer-events-none"></div>
-
-                <div className="absolute inset-5 border border-neutral-800/30 rounded-sm pointer-events-none"></div>
+              <div className="relative aspect-[4/5] w-full overflow-hidden bg-white p-4 border border-amber-200 hover:border-amber-300 transition-all duration-300 shadow-lg">
+                <div className="absolute inset-3 border border-amber-100 rounded-sm pointer-events-none"></div>
+                <div className="absolute inset-5 border border-amber-50 rounded-sm pointer-events-none"></div>
 
                 <div className="relative h-full w-full overflow-hidden">
                   <Image
@@ -114,14 +113,14 @@ export default function StudentGallery(): React.JSX.Element {
                   />
                 </div>
 
-                <div className="absolute inset-0 shadow-[inset_0_0_30px_rgba(0,0,0,0.3)] pointer-events-none"></div>
+                <div className="absolute inset-0 shadow-[inset_0_0_30px_rgba(0,0,0,0.05)] pointer-events-none"></div>
               </div>
 
               <div className="mt-4 md:mt-5 pl-1">
-                <h3 className="text-lg md:text-xl text-neutral-300 font-medium tracking-tight">
+                <h3 className="text-lg md:text-xl text-amber-900 font-medium tracking-tight">
                   {artwork.student}
                 </h3>
-                <p className="text-neutral-500 text-sm md:text-base mt-1">
+                <p className="text-amber-700 text-sm md:text-base mt-1">
                   {artwork.medium}
                 </p>
               </div>
@@ -132,13 +131,13 @@ export default function StudentGallery(): React.JSX.Element {
         <div className="mt-16 text-center">
           <button
             onClick={toggleArtworks}
-            className="inline-flex items-center space-x-2 border border-neutral-800 px-8 py-3 hover:bg-neutral-900 transition-colors duration-200"
+            className="inline-flex items-center space-x-2 border border-amber-300 bg-white px-8 py-3 hover:bg-amber-50 transition-colors duration-200 rounded-sm"
           >
-            <span className="text-sm tracking-wide text-neutral-300">
+            <span className="text-sm tracking-wide text-amber-800">
               {showMore ? "SHOW LESS" : "EXPLORE MORE"}
             </span>
             <svg
-              className={`w-4 h-4 text-neutral-300 transition-transform duration-200 ${
+              className={`w-4 h-4 text-amber-700 transition-transform duration-200 ${
                 showMore ? "rotate-180" : ""
               }`}
               fill="none"
